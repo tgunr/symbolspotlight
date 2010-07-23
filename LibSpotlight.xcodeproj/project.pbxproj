@@ -10,47 +10,42 @@
 		2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.c */; };
 		751931DE11F7BB210038715F /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 751931DC11F7BB210038715F /* test.m */; };
 		751931DF11F7BB210038715F /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 751931DD11F7BB210038715F /* GetMetadataForFile.m */; };
-		7519343C11F7CC5A0038715F /* nm.c in Sources */ = {isa = PBXBuildFile; fileRef = 751931FB11F7CB960038715F /* nm.c */; };
-		7519586111F7D5430038715F /* nm.c in Sources */ = {isa = PBXBuildFile; fileRef = 751931FB11F7CB960038715F /* nm.c */; };
 		7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
-		751959E211F7D9AE0038715F /* allocate.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959BF11F7D9AE0038715F /* allocate.o */; };
-		751959E311F7D9AE0038715F /* arch_usage.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C011F7D9AE0038715F /* arch_usage.o */; };
-		751959E411F7D9AE0038715F /* arch.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C111F7D9AE0038715F /* arch.o */; };
-		751959E511F7D9AE0038715F /* best_arch.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C211F7D9AE0038715F /* best_arch.o */; };
-		751959E611F7D9AE0038715F /* breakout.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C311F7D9AE0038715F /* breakout.o */; };
-		751959E711F7D9AE0038715F /* bytesex.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C411F7D9AE0038715F /* bytesex.o */; };
-		751959E811F7D9AE0038715F /* checkout.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C511F7D9AE0038715F /* checkout.o */; };
-		751959E911F7D9AE0038715F /* crc32.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C611F7D9AE0038715F /* crc32.o */; };
-		751959EA11F7D9AE0038715F /* dylib_roots.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C711F7D9AE0038715F /* dylib_roots.o */; };
-		751959EB11F7D9AE0038715F /* dylib_table.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C811F7D9AE0038715F /* dylib_table.o */; };
-		751959EC11F7D9AE0038715F /* errors.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959C911F7D9AE0038715F /* errors.o */; };
-		751959ED11F7D9AE0038715F /* execute.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CA11F7D9AE0038715F /* execute.o */; };
-		751959EE11F7D9AE0038715F /* fatal_arch.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CB11F7D9AE0038715F /* fatal_arch.o */; };
-		751959EF11F7D9AE0038715F /* fatals.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CC11F7D9AE0038715F /* fatals.o */; };
-		751959F011F7D9AE0038715F /* get_arch_from_host.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CD11F7D9AE0038715F /* get_arch_from_host.o */; };
-		751959F111F7D9AE0038715F /* get_toc_byte_sex.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CE11F7D9AE0038715F /* get_toc_byte_sex.o */; };
-		751959F211F7D9AE0038715F /* guess_short_name.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959CF11F7D9AE0038715F /* guess_short_name.o */; };
-		751959F311F7D9AE0038715F /* hash_string.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D011F7D9AE0038715F /* hash_string.o */; };
-		751959F411F7D9AE0038715F /* hppa.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D111F7D9AE0038715F /* hppa.o */; };
-		751959F511F7D9AE0038715F /* macosx_deployment_target.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D211F7D9AE0038715F /* macosx_deployment_target.o */; };
-		751959F611F7D9AE0038715F /* ofile_error.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D311F7D9AE0038715F /* ofile_error.o */; };
-		751959F711F7D9AE0038715F /* ofile_get_word.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D411F7D9AE0038715F /* ofile_get_word.o */; };
-		751959F811F7D9AE0038715F /* ofile.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D511F7D9AE0038715F /* ofile.o */; };
-		751959F911F7D9AE0038715F /* print.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D611F7D9AE0038715F /* print.o */; };
-		751959FA11F7D9AE0038715F /* reloc.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D711F7D9AE0038715F /* reloc.o */; };
-		751959FB11F7D9AE0038715F /* round.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D811F7D9AE0038715F /* round.o */; };
-		751959FC11F7D9AE0038715F /* seg_addr_table.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959D911F7D9AE0038715F /* seg_addr_table.o */; };
-		751959FD11F7D9AE0038715F /* set_arch_flag_name.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DA11F7D9AE0038715F /* set_arch_flag_name.o */; };
-		751959FE11F7D9AE0038715F /* swap_headers.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DB11F7D9AE0038715F /* swap_headers.o */; };
-		751959FF11F7D9AE0038715F /* symbol_list.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DC11F7D9AE0038715F /* symbol_list.o */; };
-		75195A0011F7D9AE0038715F /* SymLoc.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DD11F7D9AE0038715F /* SymLoc.o */; };
-		75195A0111F7D9AE0038715F /* unix_standard_mode.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DE11F7D9AE0038715F /* unix_standard_mode.o */; };
-		75195A0211F7D9AE0038715F /* version_number.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959DF11F7D9AE0038715F /* version_number.o */; };
-		75195A0311F7D9AE0038715F /* vm_flush_cache.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959E011F7D9AE0038715F /* vm_flush_cache.o */; };
-		75195A0411F7D9AE0038715F /* writeout.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 751959E111F7D9AE0038715F /* writeout.o */; };
-		75195A0A11F7DA380038715F /* vers.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 75195A0811F7DA380038715F /* vers.o */; };
-		75195A2811F7DBB10038715F /* lto.c in Sources */ = {isa = PBXBuildFile; fileRef = 75195A2711F7DBB10038715F /* lto.c */; };
+		756110D711F8C305007A0C78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; };
+		756110D811F8C334007A0C78 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 751931DC11F7BB210038715F /* test.m */; };
+		7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
+		7561119311F8C41D007A0C78 /* MOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561119211F8C41D007A0C78 /* MOKit.framework */; };
+		75611DA011F8DE67007A0C78 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 751931DD11F7BB210038715F /* GetMetadataForFile.m */; };
+		7561238A11FA45D0007A0C78 /* LibTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561238911FA45D0007A0C78 /* LibTools.framework */; };
+		7561238B11FA45D0007A0C78 /* LibTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561238911FA45D0007A0C78 /* LibTools.framework */; };
+		756123A611FA4784007A0C78 /* libMoreIsBetter.lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 756123A311FA477B007A0C78 /* libMoreIsBetter.lib.a */; };
+		756123BD11FA5283007A0C78 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123BC11FA5283007A0C78 /* ofile.c */; };
+		756123BE11FA5283007A0C78 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123BC11FA5283007A0C78 /* ofile.c */; };
+		756123C211FA52A0007A0C78 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123C111FA52A0007A0C78 /* arch.c */; };
+		756123C311FA52A0007A0C78 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123C111FA52A0007A0C78 /* arch.c */; };
+		756123C711FA52E9007A0C78 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123C611FA52E9007A0C78 /* libsyminfo.c */; };
+		756123C811FA52E9007A0C78 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123C611FA52E9007A0C78 /* libsyminfo.c */; };
+		756123CC11FA534D007A0C78 /* get_arch_from_host.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123CB11FA534D007A0C78 /* get_arch_from_host.c */; };
+		756123CD11FA534D007A0C78 /* get_arch_from_host.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123CB11FA534D007A0C78 /* get_arch_from_host.c */; };
+		756123D111FA538B007A0C78 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123D011FA538B007A0C78 /* allocate.c */; };
+		756123D211FA538B007A0C78 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123D011FA538B007A0C78 /* allocate.c */; };
+		756123D611FA53BC007A0C78 /* fatals.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123D511FA53BC007A0C78 /* fatals.c */; };
+		756123D711FA53BC007A0C78 /* fatals.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123D511FA53BC007A0C78 /* fatals.c */; };
+		756123DB11FA53DA007A0C78 /* ofile_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123DA11FA53DA007A0C78 /* ofile_error.c */; };
+		756123DC11FA53DA007A0C78 /* ofile_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123DA11FA53DA007A0C78 /* ofile_error.c */; };
+		756123E011FA5409007A0C78 /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123DF11FA5409007A0C78 /* errors.c */; };
+		756123E111FA5409007A0C78 /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123DF11FA5409007A0C78 /* errors.c */; };
+		756123E511FA542D007A0C78 /* bytesex.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123E411FA542D007A0C78 /* bytesex.c */; };
+		756123E611FA542D007A0C78 /* bytesex.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123E411FA542D007A0C78 /* bytesex.c */; };
+		756123EC11FA544E007A0C78 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123EB11FA544E007A0C78 /* print.c */; };
+		756123ED11FA544E007A0C78 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123EB11FA544E007A0C78 /* print.c */; };
+		756123F111FA546A007A0C78 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123F011FA546A007A0C78 /* swap_headers.c */; };
+		756123F211FA546A007A0C78 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123F011FA546A007A0C78 /* swap_headers.c */; };
+		756123F611FA5480007A0C78 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123F511FA5480007A0C78 /* guess_short_name.c */; };
+		756123F711FA5480007A0C78 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123F511FA5480007A0C78 /* guess_short_name.c */; };
+		756123FB11FA549F007A0C78 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123FA11FA549F007A0C78 /* set_arch_flag_name.c */; };
+		756123FC11FA549F007A0C78 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123FA11FA549F007A0C78 /* set_arch_flag_name.c */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -58,6 +53,16 @@
 		C88FB7D8067446EC006EBB30 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = C88FB7D7067446EC006EBB30 /* schema.xml */; };
 		C88FB7E40674480E006EBB30 /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = C88FB7E30674480E006EBB30 /* schema.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		756123A211FA477B007A0C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7519315611F7B4A40038715F /* libMoreIsBetter.lib.a */;
+			remoteInfo = MoreIsBetter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -67,46 +72,23 @@
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		751931DC11F7BB210038715F /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test.m; path = ../ForthSpotlighter/test.m; sourceTree = SOURCE_ROOT; };
 		751931DD11F7BB210038715F /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetMetadataForFile.m; path = ../ForthSpotlighter/GetMetadataForFile.m; sourceTree = SOURCE_ROOT; };
-		751931FB11F7CB960038715F /* nm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nm.c; sourceTree = "<group>"; };
-		751959BF11F7D9AE0038715F /* allocate.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = allocate.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/allocate.o"; sourceTree = SOURCE_ROOT; };
-		751959C011F7D9AE0038715F /* arch_usage.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = arch_usage.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/arch_usage.o"; sourceTree = SOURCE_ROOT; };
-		751959C111F7D9AE0038715F /* arch.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = arch.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/arch.o"; sourceTree = SOURCE_ROOT; };
-		751959C211F7D9AE0038715F /* best_arch.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = best_arch.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/best_arch.o"; sourceTree = SOURCE_ROOT; };
-		751959C311F7D9AE0038715F /* breakout.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = breakout.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/breakout.o"; sourceTree = SOURCE_ROOT; };
-		751959C411F7D9AE0038715F /* bytesex.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = bytesex.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/bytesex.o"; sourceTree = SOURCE_ROOT; };
-		751959C511F7D9AE0038715F /* checkout.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = checkout.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/checkout.o"; sourceTree = SOURCE_ROOT; };
-		751959C611F7D9AE0038715F /* crc32.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = crc32.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/crc32.o"; sourceTree = SOURCE_ROOT; };
-		751959C711F7D9AE0038715F /* dylib_roots.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib_roots.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/dylib_roots.o"; sourceTree = SOURCE_ROOT; };
-		751959C811F7D9AE0038715F /* dylib_table.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib_table.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/dylib_table.o"; sourceTree = SOURCE_ROOT; };
-		751959C911F7D9AE0038715F /* errors.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = errors.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/errors.o"; sourceTree = SOURCE_ROOT; };
-		751959CA11F7D9AE0038715F /* execute.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = execute.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/execute.o"; sourceTree = SOURCE_ROOT; };
-		751959CB11F7D9AE0038715F /* fatal_arch.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = fatal_arch.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/fatal_arch.o"; sourceTree = SOURCE_ROOT; };
-		751959CC11F7D9AE0038715F /* fatals.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = fatals.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/fatals.o"; sourceTree = SOURCE_ROOT; };
-		751959CD11F7D9AE0038715F /* get_arch_from_host.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = get_arch_from_host.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/get_arch_from_host.o"; sourceTree = SOURCE_ROOT; };
-		751959CE11F7D9AE0038715F /* get_toc_byte_sex.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = get_toc_byte_sex.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/get_toc_byte_sex.o"; sourceTree = SOURCE_ROOT; };
-		751959CF11F7D9AE0038715F /* guess_short_name.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = guess_short_name.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/guess_short_name.o"; sourceTree = SOURCE_ROOT; };
-		751959D011F7D9AE0038715F /* hash_string.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hash_string.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/hash_string.o"; sourceTree = SOURCE_ROOT; };
-		751959D111F7D9AE0038715F /* hppa.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hppa.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/hppa.o"; sourceTree = SOURCE_ROOT; };
-		751959D211F7D9AE0038715F /* macosx_deployment_target.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = macosx_deployment_target.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/macosx_deployment_target.o"; sourceTree = SOURCE_ROOT; };
-		751959D311F7D9AE0038715F /* ofile_error.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ofile_error.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/ofile_error.o"; sourceTree = SOURCE_ROOT; };
-		751959D411F7D9AE0038715F /* ofile_get_word.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ofile_get_word.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/ofile_get_word.o"; sourceTree = SOURCE_ROOT; };
-		751959D511F7D9AE0038715F /* ofile.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ofile.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/ofile.o"; sourceTree = SOURCE_ROOT; };
-		751959D611F7D9AE0038715F /* print.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = print.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/print.o"; sourceTree = SOURCE_ROOT; };
-		751959D711F7D9AE0038715F /* reloc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = reloc.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/reloc.o"; sourceTree = SOURCE_ROOT; };
-		751959D811F7D9AE0038715F /* round.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = round.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/round.o"; sourceTree = SOURCE_ROOT; };
-		751959D911F7D9AE0038715F /* seg_addr_table.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = seg_addr_table.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/seg_addr_table.o"; sourceTree = SOURCE_ROOT; };
-		751959DA11F7D9AE0038715F /* set_arch_flag_name.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = set_arch_flag_name.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/set_arch_flag_name.o"; sourceTree = SOURCE_ROOT; };
-		751959DB11F7D9AE0038715F /* swap_headers.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = swap_headers.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/swap_headers.o"; sourceTree = SOURCE_ROOT; };
-		751959DC11F7D9AE0038715F /* symbol_list.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = symbol_list.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/symbol_list.o"; sourceTree = SOURCE_ROOT; };
-		751959DD11F7D9AE0038715F /* SymLoc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = SymLoc.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/SymLoc.o"; sourceTree = SOURCE_ROOT; };
-		751959DE11F7D9AE0038715F /* unix_standard_mode.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = unix_standard_mode.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/unix_standard_mode.o"; sourceTree = SOURCE_ROOT; };
-		751959DF11F7D9AE0038715F /* version_number.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = version_number.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/version_number.o"; sourceTree = SOURCE_ROOT; };
-		751959E011F7D9AE0038715F /* vm_flush_cache.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = vm_flush_cache.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/vm_flush_cache.o"; sourceTree = SOURCE_ROOT; };
-		751959E111F7D9AE0038715F /* writeout.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = writeout.o; path = "../../../Darwin/cctools-750/libstuff/static_obj/writeout.o"; sourceTree = SOURCE_ROOT; };
-		75195A0711F7DA380038715F /* lipo.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = lipo.o; path = "../../../Darwin/cctools-750/misc/lipo.o"; sourceTree = SOURCE_ROOT; };
-		75195A0811F7DA380038715F /* vers.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = vers.o; path = "../../../Darwin/cctools-750/misc/vers.o"; sourceTree = SOURCE_ROOT; };
-		75195A1711F7DB180038715F /* lipo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lipo.c; path = "../../../Darwin/cctools-750/misc/lipo.c"; sourceTree = SOURCE_ROOT; };
-		75195A2711F7DBB10038715F /* lto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lto.c; path = "../../../Darwin/cctools-750/libstuff/lto.c"; sourceTree = SOURCE_ROOT; };
+		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7561119211F8C41D007A0C78 /* MOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOKit.framework; path = /Library/Frameworks/MOKit.framework; sourceTree = "<absolute>"; };
+		7561238911FA45D0007A0C78 /* LibTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LibTools.framework; path = "cctools-750/LibTools/build/Release/LibTools.framework"; sourceTree = Darwin; };
+		7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MoreIsBetterLib.xcodeproj; path = "../../SDK/MoreIsBetter/MIB-Libraries/MoreIsBetterLib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		756123BC11FA5283007A0C78 /* ofile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ofile.c; path = "cctools-750/libstuff/ofile.c"; sourceTree = Darwin; };
+		756123C111FA52A0007A0C78 /* arch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arch.c; path = ../../../Darwin/cctools/libstuff/arch.c; sourceTree = SOURCE_ROOT; };
+		756123C611FA52E9007A0C78 /* libsyminfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libsyminfo.c; path = ../../../Darwin/cctools/cbtlibs/libsyminfo.c; sourceTree = SOURCE_ROOT; };
+		756123CB11FA534D007A0C78 /* get_arch_from_host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = get_arch_from_host.c; path = ../../../Darwin/cctools/libstuff/get_arch_from_host.c; sourceTree = SOURCE_ROOT; };
+		756123D011FA538B007A0C78 /* allocate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = allocate.c; path = ../../../Darwin/cctools/libstuff/allocate.c; sourceTree = SOURCE_ROOT; };
+		756123D511FA53BC007A0C78 /* fatals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fatals.c; path = ../../../Darwin/cctools/libstuff/fatals.c; sourceTree = SOURCE_ROOT; };
+		756123DA11FA53DA007A0C78 /* ofile_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ofile_error.c; path = ../../../Darwin/cctools/libstuff/ofile_error.c; sourceTree = SOURCE_ROOT; };
+		756123DF11FA5409007A0C78 /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = errors.c; path = ../../../Darwin/cctools/libstuff/errors.c; sourceTree = SOURCE_ROOT; };
+		756123E411FA542D007A0C78 /* bytesex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bytesex.c; path = ../../../Darwin/cctools/libstuff/bytesex.c; sourceTree = SOURCE_ROOT; };
+		756123EB11FA544E007A0C78 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = print.c; path = ../../../Darwin/cctools/libstuff/print.c; sourceTree = SOURCE_ROOT; };
+		756123F011FA546A007A0C78 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = swap_headers.c; path = ../../../Darwin/cctools/libstuff/swap_headers.c; sourceTree = SOURCE_ROOT; };
+		756123F511FA5480007A0C78 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = guess_short_name.c; path = ../../../Darwin/cctools/libstuff/guess_short_name.c; sourceTree = SOURCE_ROOT; };
+		756123FA11FA549F007A0C78 /* set_arch_flag_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = set_arch_flag_name.c; path = ../../../Darwin/cctools/libstuff/set_arch_flag_name.c; sourceTree = SOURCE_ROOT; };
 		8D576316048677EA00EA77CD /* LibSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibSpotlight.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
@@ -121,42 +103,10 @@
 			files = (
 				751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */,
 				7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */,
-				751959E211F7D9AE0038715F /* allocate.o in Frameworks */,
-				751959E311F7D9AE0038715F /* arch_usage.o in Frameworks */,
-				751959E411F7D9AE0038715F /* arch.o in Frameworks */,
-				751959E511F7D9AE0038715F /* best_arch.o in Frameworks */,
-				751959E611F7D9AE0038715F /* breakout.o in Frameworks */,
-				751959E711F7D9AE0038715F /* bytesex.o in Frameworks */,
-				751959E811F7D9AE0038715F /* checkout.o in Frameworks */,
-				751959E911F7D9AE0038715F /* crc32.o in Frameworks */,
-				751959EA11F7D9AE0038715F /* dylib_roots.o in Frameworks */,
-				751959EB11F7D9AE0038715F /* dylib_table.o in Frameworks */,
-				751959EC11F7D9AE0038715F /* errors.o in Frameworks */,
-				751959ED11F7D9AE0038715F /* execute.o in Frameworks */,
-				751959EE11F7D9AE0038715F /* fatal_arch.o in Frameworks */,
-				751959EF11F7D9AE0038715F /* fatals.o in Frameworks */,
-				751959F011F7D9AE0038715F /* get_arch_from_host.o in Frameworks */,
-				751959F111F7D9AE0038715F /* get_toc_byte_sex.o in Frameworks */,
-				751959F211F7D9AE0038715F /* guess_short_name.o in Frameworks */,
-				751959F311F7D9AE0038715F /* hash_string.o in Frameworks */,
-				751959F411F7D9AE0038715F /* hppa.o in Frameworks */,
-				751959F511F7D9AE0038715F /* macosx_deployment_target.o in Frameworks */,
-				751959F611F7D9AE0038715F /* ofile_error.o in Frameworks */,
-				751959F711F7D9AE0038715F /* ofile_get_word.o in Frameworks */,
-				751959F811F7D9AE0038715F /* ofile.o in Frameworks */,
-				751959F911F7D9AE0038715F /* print.o in Frameworks */,
-				751959FA11F7D9AE0038715F /* reloc.o in Frameworks */,
-				751959FB11F7D9AE0038715F /* round.o in Frameworks */,
-				751959FC11F7D9AE0038715F /* seg_addr_table.o in Frameworks */,
-				751959FD11F7D9AE0038715F /* set_arch_flag_name.o in Frameworks */,
-				751959FE11F7D9AE0038715F /* swap_headers.o in Frameworks */,
-				751959FF11F7D9AE0038715F /* symbol_list.o in Frameworks */,
-				75195A0011F7D9AE0038715F /* SymLoc.o in Frameworks */,
-				75195A0111F7D9AE0038715F /* unix_standard_mode.o in Frameworks */,
-				75195A0211F7D9AE0038715F /* version_number.o in Frameworks */,
-				75195A0311F7D9AE0038715F /* vm_flush_cache.o in Frameworks */,
-				75195A0411F7D9AE0038715F /* writeout.o in Frameworks */,
-				75195A0A11F7DA380038715F /* vers.o in Frameworks */,
+				7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */,
+				7561119311F8C41D007A0C78 /* MOKit.framework in Frameworks */,
+				7561238A11FA45D0007A0C78 /* LibTools.framework in Frameworks */,
+				756123A611FA4784007A0C78 /* libMoreIsBetter.lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +116,7 @@
 			files = (
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
+				7561238B11FA45D0007A0C78 /* LibTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,43 +126,7 @@
 		089C166AFE841209C02AAC07 /* LibSpotlight */ = {
 			isa = PBXGroup;
 			children = (
-				75195A0711F7DA380038715F /* lipo.o */,
-				75195A0811F7DA380038715F /* vers.o */,
-				751959BF11F7D9AE0038715F /* allocate.o */,
-				751959C011F7D9AE0038715F /* arch_usage.o */,
-				751959C111F7D9AE0038715F /* arch.o */,
-				751959C211F7D9AE0038715F /* best_arch.o */,
-				751959C311F7D9AE0038715F /* breakout.o */,
-				751959C411F7D9AE0038715F /* bytesex.o */,
-				751959C511F7D9AE0038715F /* checkout.o */,
-				751959C611F7D9AE0038715F /* crc32.o */,
-				751959C711F7D9AE0038715F /* dylib_roots.o */,
-				751959C811F7D9AE0038715F /* dylib_table.o */,
-				751959C911F7D9AE0038715F /* errors.o */,
-				751959CA11F7D9AE0038715F /* execute.o */,
-				751959CB11F7D9AE0038715F /* fatal_arch.o */,
-				751959CC11F7D9AE0038715F /* fatals.o */,
-				751959CD11F7D9AE0038715F /* get_arch_from_host.o */,
-				751959CE11F7D9AE0038715F /* get_toc_byte_sex.o */,
-				751959CF11F7D9AE0038715F /* guess_short_name.o */,
-				751959D011F7D9AE0038715F /* hash_string.o */,
-				751959D111F7D9AE0038715F /* hppa.o */,
-				751959D211F7D9AE0038715F /* macosx_deployment_target.o */,
-				751959D311F7D9AE0038715F /* ofile_error.o */,
-				751959D411F7D9AE0038715F /* ofile_get_word.o */,
-				751959D511F7D9AE0038715F /* ofile.o */,
-				751959D611F7D9AE0038715F /* print.o */,
-				751959D711F7D9AE0038715F /* reloc.o */,
-				751959D811F7D9AE0038715F /* round.o */,
-				751959D911F7D9AE0038715F /* seg_addr_table.o */,
-				751959DA11F7D9AE0038715F /* set_arch_flag_name.o */,
-				751959DB11F7D9AE0038715F /* swap_headers.o */,
-				751959DC11F7D9AE0038715F /* symbol_list.o */,
-				751959DD11F7D9AE0038715F /* SymLoc.o */,
-				751959DE11F7D9AE0038715F /* unix_standard_mode.o */,
-				751959DF11F7D9AE0038715F /* version_number.o */,
-				751959E011F7D9AE0038715F /* vm_flush_cache.o */,
-				751959E111F7D9AE0038715F /* writeout.o */,
+				756111C511F8C5A1007A0C78 /* Libraries */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -225,6 +140,9 @@
 			children = (
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				7561111111F8C408007A0C78 /* Foundation.framework */,
+				7561119211F8C41D007A0C78 /* MOKit.framework */,
+				7561238911FA45D0007A0C78 /* LibTools.framework */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -243,13 +161,23 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				75195A1711F7DB180038715F /* lipo.c */,
-				75195A2711F7DBB10038715F /* lto.c */,
 				751931DC11F7BB210038715F /* test.m */,
 				751931DD11F7BB210038715F /* GetMetadataForFile.m */,
+				756123C611FA52E9007A0C78 /* libsyminfo.c */,
 				2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.c */,
+				756123BC11FA5283007A0C78 /* ofile.c */,
+				756123C111FA52A0007A0C78 /* arch.c */,
+				756123CB11FA534D007A0C78 /* get_arch_from_host.c */,
+				756123D011FA538B007A0C78 /* allocate.c */,
+				756123D511FA53BC007A0C78 /* fatals.c */,
+				756123DA11FA53DA007A0C78 /* ofile_error.c */,
+				756123DF11FA5409007A0C78 /* errors.c */,
+				756123E411FA542D007A0C78 /* bytesex.c */,
+				756123EB11FA544E007A0C78 /* print.c */,
+				756123F011FA546A007A0C78 /* swap_headers.c */,
+				756123F511FA5480007A0C78 /* guess_short_name.c */,
+				756123FA11FA549F007A0C78 /* set_arch_flag_name.c */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
-				751931FB11F7CB960038715F /* nm.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -259,6 +187,22 @@
 			children = (
 				8D576316048677EA00EA77CD /* LibSpotlight.mdimporter */,
 				751931D611F7BAFD0038715F /* testlib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		756111C511F8C5A1007A0C78 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		7561239F11FA477B007A0C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				756123A311FA477B007A0C78 /* libMoreIsBetter.lib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -322,6 +266,12 @@
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* LibSpotlight */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7561239F11FA477B007A0C78 /* Products */;
+					ProjectRef = 7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* LibSpotlight */,
@@ -329,6 +279,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		756123A311FA477B007A0C78 /* libMoreIsBetter.lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMoreIsBetter.lib.a;
+			remoteRef = 756123A211FA477B007A0C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D57630F048677EA00EA77CD /* Resources */ = {
@@ -358,8 +318,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7519586111F7D5430038715F /* nm.c in Sources */,
-				75195A2811F7DBB10038715F /* lto.c in Sources */,
+				756110D811F8C334007A0C78 /* test.m in Sources */,
+				756110D711F8C305007A0C78 /* main.c in Sources */,
+				75611DA011F8DE67007A0C78 /* GetMetadataForFile.m in Sources */,
+				756123BD11FA5283007A0C78 /* ofile.c in Sources */,
+				756123C211FA52A0007A0C78 /* arch.c in Sources */,
+				756123C711FA52E9007A0C78 /* libsyminfo.c in Sources */,
+				756123CC11FA534D007A0C78 /* get_arch_from_host.c in Sources */,
+				756123D111FA538B007A0C78 /* allocate.c in Sources */,
+				756123D611FA53BC007A0C78 /* fatals.c in Sources */,
+				756123DB11FA53DA007A0C78 /* ofile_error.c in Sources */,
+				756123E011FA5409007A0C78 /* errors.c in Sources */,
+				756123E511FA542D007A0C78 /* bytesex.c in Sources */,
+				756123EC11FA544E007A0C78 /* print.c in Sources */,
+				756123F111FA546A007A0C78 /* swap_headers.c in Sources */,
+				756123F611FA5480007A0C78 /* guess_short_name.c in Sources */,
+				756123FB11FA549F007A0C78 /* set_arch_flag_name.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +345,19 @@
 				2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.c in Sources */,
 				751931DE11F7BB210038715F /* test.m in Sources */,
 				751931DF11F7BB210038715F /* GetMetadataForFile.m in Sources */,
-				7519343C11F7CC5A0038715F /* nm.c in Sources */,
+				756123BE11FA5283007A0C78 /* ofile.c in Sources */,
+				756123C311FA52A0007A0C78 /* arch.c in Sources */,
+				756123C811FA52E9007A0C78 /* libsyminfo.c in Sources */,
+				756123CD11FA534D007A0C78 /* get_arch_from_host.c in Sources */,
+				756123D211FA538B007A0C78 /* allocate.c in Sources */,
+				756123D711FA53BC007A0C78 /* fatals.c in Sources */,
+				756123DC11FA53DA007A0C78 /* ofile_error.c in Sources */,
+				756123E111FA5409007A0C78 /* errors.c in Sources */,
+				756123E611FA542D007A0C78 /* bytesex.c in Sources */,
+				756123ED11FA544E007A0C78 /* print.c in Sources */,
+				756123F211FA546A007A0C78 /* swap_headers.c in Sources */,
+				756123F711FA5480007A0C78 /* guess_short_name.c in Sources */,
+				756123FC11FA549F007A0C78 /* set_arch_flag_name.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +388,15 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -437,7 +431,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -469,7 +471,15 @@
 		634C98C808E80093002B8C46 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -500,25 +510,39 @@
 		634C98CA08E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				FRAMEWORK_SEARCH_PATHS = "~/Sources/Darwin/cctools/LibTools/build/Release\"";
+				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
+				OTHER_CFLAGS = "-v";
 			};
 			name = Development;
 		};
 		634C98CB08E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				FRAMEWORK_SEARCH_PATHS = "~/Sources/Darwin/cctools/LibTools/build/Release\"";
+				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
 			};
 			name = Deployment;
 		};
 		634C98CC08E80093002B8C46 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				FRAMEWORK_SEARCH_PATHS = "~/Sources/Darwin/cctools/LibTools/build/Release\"";
+				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
 			};
 			name = Default;
 		};
 		751931D811F7BAFE0038715F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -526,13 +550,11 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = 4.0;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Darwin/cctools-750/include\"/**";
 				INSTALL_PATH = /usr/local/bin;
-				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_64)";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
 				OTHER_CFLAGS = "-v";
 				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Darwin/cctools-750/include\"";
 			};
 			name = Development;
 		};
@@ -542,9 +564,23 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../SDK/MoreIsBetter/MIB-Libraries/build/Development\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
 				ZERO_LINK = NO;
@@ -555,9 +591,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../SDK/MoreIsBetter/MIB-Libraries/build/Development\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
 			};
