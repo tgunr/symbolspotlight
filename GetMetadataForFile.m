@@ -67,14 +67,21 @@ Boolean GetMetadataForFile(void* thisInterface,
 	
 	NSMutableString *bigString = [[NSMutableString alloc] init];
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	SymInfoList * symInfoList;
+	SymInfoList * nmList;
+	char * shortName;
+	const char *pathPtr;
+	SymInfoSymbol * symImports;
+	SymInfoSymbol * symExports;
+	SymInfoDependencies symLibInfo;
 	
 	// setup for the file
 	NSLog(@"Library File: %@", pathToFile);
-	char *pathPtr = (char *)CFStringGetCStringPtr(pathToFile, kCFStringEncodingUnicode);
+	pathPtr = CFStringGetCStringPtr(pathToFile, kCFStringEncodingUTF8);
+//	pathPtr = malloc(4096);
+//	CFStringGetCString(pathToFile, pathPtr, 4096, kCFStringEncodingUTF8);
 	NSLog(@"pathPtr: %x", pathPtr);
 	if (pathPtr == NULL) {
-		if (CFStringGetCString(pathToFile, path, 2048, kCFStringEncodingASCII)) {
+		if (CFStringGetCString(pathToFile, path, 2048, kCFStringEncodingUTF8)) {
 			// NSLog(@"path: %s", path);
 			syslog(LOG_ALERT, "LibSpotlight: %s", path);
 			fh = fopen(path, "r");
@@ -85,7 +92,15 @@ Boolean GetMetadataForFile(void* thisInterface,
 		fh = fopen(pathPtr, "r");
 	}
 	if (fh) {
-		symInfoList = SymInfoCreate("/tmp/NMList");
+		fclose(fh);
+		nmList = SymInfoCreate(path);
+		if (nmList) {
+			shortName = SymInfoGetShortName(nmList);
+			symImports = SymInfoGetImports(nmList);
+			symExports = SymInfoGetExports(nmList);
+			symLibInfo = SymInfoGetLibraryInfo(nmList);
+
+		}
 	}		
 	[pool release];
 	return FALSE;
