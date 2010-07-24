@@ -1,5 +1,10 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h> 
+#include <Foundation/Foundation.h>
+#include <MOKit/MOKit.h>
+#include <stdio.h>
+#include <syslog.h>
+#include <cbt/libsyminfo.h>
 
 /* -----------------------------------------------------------------------------
    Step 1
@@ -51,6 +56,37 @@ Boolean GetMetadataForFile(void* thisInterface,
     /* Return the attribute keys and attribute values in the dict */
     /* Return TRUE if successful, FALSE if there was no data provided */
     
-    #warning To complete your importer please implement the function GetMetadataForFile in GetMetadataForFile.c
-    return FALSE;
+    Boolean success=NO;
+	bool foundInitial=false, headerLine=false;
+	char line[256];
+	char path[2048];
+	FILE * fh = NULL;
+    NSRange range, theRange;
+	NSString *version, *date, *time, *author, *contains;
+	NSArray *array, *data;
+	
+	NSMutableString *bigString = [[NSMutableString alloc] init];
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	SymInfoList * symInfoList;
+	
+	// setup for the file
+	NSLog(@"Library File: %@", pathToFile);
+	char *pathPtr = (char *)CFStringGetCStringPtr(pathToFile, kCFStringEncodingUnicode);
+	NSLog(@"pathPtr: %x", pathPtr);
+	if (pathPtr == NULL) {
+		if (CFStringGetCString(pathToFile, path, 2048, kCFStringEncodingASCII)) {
+			// NSLog(@"path: %s", path);
+			syslog(LOG_ALERT, "LibSpotlight: %s", path);
+			fh = fopen(path, "r");
+		}
+	} else {
+		// NSLog(@"pathPtr: %s", pathPtr);
+		syslog(LOG_ALERT, "LibSpotlight: %s", pathPtr);
+		fh = fopen(pathPtr, "r");
+	}
+	if (fh) {
+		symInfoList = SymInfoCreate("/tmp/NMList");
+	}		
+	[pool release];
+	return FALSE;
 }
