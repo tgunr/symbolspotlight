@@ -1,5 +1,5 @@
 #include "test.h"
-//#include <MorefilesX.h>
+#include <MOKit/MorefilesX.h>
 
 Boolean processfile(const char *path) {
 	CFStringRef thePath;
