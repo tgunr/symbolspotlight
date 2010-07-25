@@ -47,6 +47,19 @@
    and return it as a dictionary
    ----------------------------------------------------------------------------- */
 
+void
+SymInfoPrintSymbol(SymInfoSymbol symbol)
+{
+	if(symbol == NULL){
+	    printf("Null symbol, not doing a thing\n");
+	    return;
+	}
+	NSLog(@"symbol name: %s\n", SymInfoGetSymbolName(symbol));
+	NSLog(@"symbol arch: %s\n", SymInfoGetSymbolArch(symbol));
+	NSLog(@"symbol ordinal: %s\n", SymInfoGetSymbolOrdinal(symbol));
+}
+
+
 Boolean GetMetadataForFile(void* thisInterface, 
 			   CFMutableDictionaryRef attributes, 
 			   CFStringRef contentTypeUTI,
@@ -67,7 +80,7 @@ Boolean GetMetadataForFile(void* thisInterface,
 	
 	NSMutableString *bigString = [[NSMutableString alloc] init];
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	SymInfoList * nmList;
+	SymInfoList nmList;
 	char * shortName;
 	const char *pathPtr;
 	SymInfoSymbol * symImports;
@@ -95,11 +108,23 @@ Boolean GetMetadataForFile(void* thisInterface,
 		fclose(fh);
 		nmList = SymInfoCreate(path);
 		if (nmList) {
-			shortName = SymInfoGetShortName(nmList);
-			symImports = SymInfoGetImports(nmList);
+			unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
+			unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
 			symExports = SymInfoGetExports(nmList);
+			symImports = SymInfoGetImports(nmList);
+			uint32_t i;
+			for(i = 0; i < symInfoExportCount; i++)
+				SymInfoPrintSymbol(symExports[i]);
+			for(i = 0; i < symInfoImportCount; i++)
+				SymInfoPrintSymbol(symImports[i]);
+			
+			shortName = SymInfoGetShortName(nmList);
 			symLibInfo = SymInfoGetLibraryInfo(nmList);
-
+			char * symInfoName = SymInfoGetSymbolName(symImports);
+			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
+			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
+			
+			
 		}
 	}		
 	[pool release];

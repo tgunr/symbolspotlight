@@ -84,13 +84,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		756123A211FA477B007A0C78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7519315611F7B4A40038715F;
-			remoteInfo = MoreIsBetter;
-		};
 		75E98BE611FB974000C931AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
@@ -156,7 +149,6 @@
 		2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MoreIsBetterLib.xcodeproj; path = "../../SDK/MoreIsBetter/MIB-Libraries/MoreIsBetterLib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		756123BC11FA5283007A0C78 /* ofile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ofile.c; path = "cctools-750/libstuff/ofile.c"; sourceTree = Darwin; };
 		756123C111FA52A0007A0C78 /* arch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arch.c; path = ../../../Darwin/cctools/libstuff/arch.c; sourceTree = SOURCE_ROOT; };
 		756123C611FA52E9007A0C78 /* libsyminfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libsyminfo.c; path = ../../../Darwin/cctools/cbtlibs/libsyminfo.c; sourceTree = SOURCE_ROOT; };
@@ -317,19 +309,10 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		7561239F11FA477B007A0C78 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				756123A311FA477B007A0C78 /* libMoreIsBetter.lib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7561243C11FB25B0007A0C78 /* External Projects */ = {
 			isa = PBXGroup;
 			children = (
 				75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */,
-				7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */,
 			);
 			name = "External Projects";
 			sourceTree = "<group>";
@@ -489,10 +472,6 @@
 					ProductGroup = 75E98BDA11FB974000C931AD /* Products */;
 					ProjectRef = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
 				},
-				{
-					ProductGroup = 7561239F11FA477B007A0C78 /* Products */;
-					ProjectRef = 7561239E11FA477B007A0C78 /* MoreIsBetterLib.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -503,13 +482,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		756123A311FA477B007A0C78 /* libMoreIsBetter.lib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMoreIsBetter.lib.a;
-			remoteRef = 756123A211FA477B007A0C78 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		75E98BE711FB974000C931AD /* MOKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
