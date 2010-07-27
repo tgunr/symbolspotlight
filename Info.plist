@@ -4,13 +4,16 @@
 		{
 			UTTypeConformsTo = (
 				"public.object-code",
+				"public.data",
 			);
 			UTTypeDescription = "Object File";
-			UTTypeIdentifier = "public.object-file";
+			UTTypeIdentifier = "public.object-code";
 			UTTypeReferenceURL = "http://en.wikipedia.org/wiki/Object_file";
 			"UTTypeTagSpecification" = {
 				"public.filename-extension" = (
 					o,
+					a,
+					dylib,
 				);
 			};
 		},
@@ -19,7 +22,7 @@
 		{
 			CFBundleTypeRole = MDImporter;
 			LSItemContentTypes = (
-				"public.object-file",
+				"public.object-code",
 			);
 		},
 	);
