@@ -60,6 +60,19 @@ SymInfoPrintSymbol(SymInfoSymbol symbol)
 }
 
 
+NSString *
+SymInfoAsLine(SymInfoSymbol symbol)
+{
+	if(symbol == NULL){
+	    printf("Null symbol, not doing a thing\n");
+	    return NULL;
+	}
+	NSString *theString = [[[NSMutableString alloc] initWithCString:SymInfoGetSymbolName(symbol) encoding:kCFStringEncodingUTF8] autorelease];
+	theString = [theString stringByAppendingString:@" "];
+	return theString;
+}
+
+
 Boolean GetMetadataForFile(void* thisInterface, 
 			   CFMutableDictionaryRef attributes, 
 			   CFStringRef contentTypeUTI,
@@ -69,42 +82,24 @@ Boolean GetMetadataForFile(void* thisInterface,
     /* Return the attribute keys and attribute values in the dict */
     /* Return TRUE if successful, FALSE if there was no data provided */
     
-    Boolean success=NO;
-	bool foundInitial=false, headerLine=false;
-	char line[256];
-	char path[2048];
+	Boolean success=NO;
 	FILE * fh = NULL;
-    NSRange range, theRange;
-	NSString *version, *date, *time, *author, *contains;
-	NSArray *array, *data;
-	
-	NSMutableString *bigString = [[NSMutableString alloc] init];
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	NSMutableString *archiveFileContent = [[NSMutableString alloc] init];
 	SymInfoList nmList;
-	char * shortName;
-	const char *pathPtr;
+	char * path;
+	const char * shortName;
 	SymInfoSymbol * symImports;
 	SymInfoSymbol * symExports;
 	SymInfoDependencies symLibInfo;
 	
 	// setup for the file
 	NSLog(@"Library File: %@", pathToFile);
-	pathPtr = CFStringGetCStringPtr(pathToFile, kCFStringEncodingUTF8);
-//	pathPtr = malloc(4096);
-//	CFStringGetCString(pathToFile, pathPtr, 4096, kCFStringEncodingUTF8);
-	NSLog(@"pathPtr: %x", pathPtr);
-	if (pathPtr == NULL) {
-		if (CFStringGetCString(pathToFile, path, 2048, kCFStringEncodingUTF8)) {
-			// NSLog(@"path: %s", path);
-			syslog(LOG_ALERT, "LibSpotlight: %s", path);
-			fh = fopen(path, "r");
-		}
-	} else {
-		// NSLog(@"pathPtr: %s", pathPtr);
-		syslog(LOG_ALERT, "LibSpotlight: %s", pathPtr);
-		fh = fopen(pathPtr, "r");
-	}
-	if (fh) {
+    syslog(1, "LibSpotlight");
+    path = malloc(4096);
+    success = CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8);
+    fh = fopen(path, "r");
+    if (fh) {
 		fclose(fh);
 		nmList = SymInfoCreate(path);
 		if (nmList) {
@@ -114,19 +109,32 @@ Boolean GetMetadataForFile(void* thisInterface,
 			symImports = SymInfoGetImports(nmList);
 			uint32_t i;
 			for(i = 0; i < symInfoExportCount; i++)
-				SymInfoPrintSymbol(symExports[i]);
+				[archiveFileContent appendString:SymInfoAsLine(symExports[i])];
+			
 			for(i = 0; i < symInfoImportCount; i++)
-				SymInfoPrintSymbol(symImports[i]);
+				[archiveFileContent appendString:SymInfoAsLine(symImports[i])];
 			
 			shortName = SymInfoGetShortName(nmList);
+			if (!shortName) {
+				if ([(NSString *)pathToFile isAbsolutePath]) {
+					shortName = [[(NSString *)pathToFile lastPathComponent] cStringUsingEncoding:kCFStringEncodingUTF8];
+				}
+			}
 			symLibInfo = SymInfoGetLibraryInfo(nmList);
-			char * symInfoName = SymInfoGetSymbolName(symImports);
-			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
-			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
-			
-			
+//			char * symInfoName = SymInfoGetSymbolName(symImports);
+//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
+//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
+			[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:(NSString *)kMDItemTitle];
+			NSString *displayName = [[NSString alloc] initWithCString: shortName encoding: kCFStringEncodingUTF8];
+			[(NSMutableDictionary *)attributes setObject:displayName forKey:(NSString *)kMDItemDisplayName];
+			[(NSMutableDictionary *)attributes setObject:@"Object File" forKey:(NSString *)kMDItemKind];
+			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
+            [displayName release];
+            [archiveFileContent release];
+			success=TRUE;
 		}
-	}		
+        free(path);
+	}
 	[pool release];
-	return FALSE;
+	return success;
 }

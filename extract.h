@@ -7,12 +7,8 @@
  *
  */
 
-#ifndef __GetMetadataForFile__
-#define __GetMetadataForFile__
-
 Boolean GetMetadataForFile(void* thisInterface, 
 						   CFMutableDictionaryRef attributes, 
 						   CFStringRef contentTypeUTI,
 						   CFStringRef pathToFile);
 
-#endif
