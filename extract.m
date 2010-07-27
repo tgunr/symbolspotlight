@@ -1,7 +1,6 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h> 
 #include <Foundation/Foundation.h>
-#include <MOKit/MOKit.h>
 #include <stdio.h>
 #include <syslog.h>
 #include <cbt/libsyminfo.h>
@@ -73,7 +72,7 @@ SymInfoAsLine(SymInfoSymbol symbol)
 }
 
 
-Boolean GetMetadataForFile(void* thisInterface, 
+Boolean extract(void* thisInterface, 
 			   CFMutableDictionaryRef attributes, 
 			   CFStringRef contentTypeUTI,
 			   CFStringRef pathToFile)
@@ -128,7 +127,7 @@ Boolean GetMetadataForFile(void* thisInterface,
 			NSString *displayName = [[NSString alloc] initWithCString: shortName encoding: kCFStringEncodingUTF8];
 			[(NSMutableDictionary *)attributes setObject:displayName forKey:(NSString *)kMDItemDisplayName];
 			[(NSMutableDictionary *)attributes setObject:@"Object File" forKey:(NSString *)kMDItemKind];
-			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
+            //			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
             [displayName release];
             [archiveFileContent release];
 			success=TRUE;

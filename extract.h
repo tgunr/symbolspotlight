@@ -1,5 +1,5 @@
 /*
- *  GetMetadataForFile.h
+ *  extract.h
  *  Forth Spotlighter
  *
  *  Created by Dave on 5/10/05.
@@ -7,7 +7,7 @@
  *
  */
 
-Boolean GetMetadataForFile(void* thisInterface, 
+Boolean extract(void* thisInterface, 
 						   CFMutableDictionaryRef attributes, 
 						   CFStringRef contentTypeUTI,
 						   CFStringRef pathToFile);
