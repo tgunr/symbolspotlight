@@ -1,15 +1,16 @@
-#include "test.h"
-#include <MOKit/MorefilesX.h>
+#import <CoreFoundation/CoreFoundation.h>
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 Boolean processfile(const char *path) {
 	CFStringRef thePath;
 	Boolean result;
 	
 	CFMutableDictionaryRef attributes = CFDictionaryCreateMutable(NULL,0,NULL,NULL);
-	thePath = CFStringCreateWithCString(NULL,path,kCFStringEncodingMacRoman);
+	thePath = CFStringCreateWithCString(NULL,path,kCFStringEncodingUTF8);
 	if (CFStringHasSuffix(thePath, (CFStringRef)@".o")) {
 		// NSLog(@"File: %@", thePath);
-		result = GetMetadataForFile(NULL, attributes, (CFStringRef)@"", thePath);
+		result = extract(NULL, attributes, (CFStringRef)@"", thePath);
 	}
 	if (attributes) 
 		CFRelease(attributes);
@@ -17,37 +18,22 @@ Boolean processfile(const char *path) {
 }
 
 int main (int argc, const char * argv[]) {
-	char filepath[256];
-	FSSpec spec;
-	ItemCount numRefs;
-	Boolean containerChanged, isDir;
-	OSStatus sts;
-	OSErr err;
-	FSRef *container = nil, ref, *refPtr;
-	FSRef **refsHandle;
-	
-	
-	sts = FSPathMakeRef((const UInt8 *)argv[1],&ref,&isDir);
-	if (isDir) {
-		container = (FSRef *)NewPtr(sizeof(container));
-		sts = FSMakeFSRef(spec.vRefNum, spec.parID, spec.name, container);
-		refPtr = (FSRef *)&refsHandle;
-		err = FSGetDirectoryItems(&ref, refPtr, &numRefs, &containerChanged);
-		if (!err) {
-			int i;
-			refPtr = *refsHandle;
-			for(i=0; i<numRefs; i++) {
-				ref = refPtr[i];
-				sts = FSRefMakePath(&ref, (UInt8 *)&filepath,256);
-				if (!sts) 
-					processfile(filepath);
-			}
-			DisposeHandle((Handle)refsHandle);
-			err = MemError();
-		}
-		DisposePtr((Ptr)container);
+    if (argc < 2)
+        return -1;
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSString * path = [NSString stringWithUTF8String: (const char *)argv[1]];
+    NSFileWrapper *fileWrapper = [[NSFileWrapper alloc] initWithPath:path];
+	if ([fileWrapper isDirectory]) {
+        NSDictionary *dirDictionary = [NSDictionary dictionary];
+        [fileWrapper initDirectoryWithFileWrappers: dirDictionary];
+        NSEnumerator *enumerator = [dirDictionary objectEnumerator];
+        NSFileWrapper * aFile;
+        while ((aFile = [enumerator nextObject])) {
+            processfile([[aFile filename] UTF8String]);
+        }
 	} else
 		processfile(argv[1]);
+    [pool release];
 	return 0;
 }
 

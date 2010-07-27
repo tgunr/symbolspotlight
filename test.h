@@ -11,6 +11,5 @@
 //#include <CoreFoundation/CFPlugInCOM.h>
 //#include <CoreServices/CoreServices.h>
 //#include <Foundation/Foundation.h>
-#include <MOKit/MOKit.h>
 #include <stdio.h>
-#include "GetMetadataForFile.h"
+#include "extract.h"
