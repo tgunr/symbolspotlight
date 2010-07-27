@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */; };
+		2C05A19C06CAA52B00D84F6F /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
+		7509C11311FE0DEB003FDB3F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509C11211FE0DEB003FDB3F /* AppKit.framework */; };
 		7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
 		756110D711F8C305007A0C78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; };
@@ -38,6 +39,11 @@
 		756123F711FA5480007A0C78 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123F511FA5480007A0C78 /* guess_short_name.c */; };
 		756123FB11FA549F007A0C78 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123FA11FA549F007A0C78 /* set_arch_flag_name.c */; };
 		756123FC11FA549F007A0C78 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 756123FA11FA549F007A0C78 /* set_arch_flag_name.c */; };
+		7561259711FE4B13008AD087 /* pms.h in Headers */ = {isa = PBXBuildFile; fileRef = 7561259511FE4B13008AD087 /* pms.h */; };
+		7561259811FE4B13008AD087 /* pms.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561259611FE4B13008AD087 /* pms.m */; };
+		7561259911FE4B13008AD087 /* pms.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561259611FE4B13008AD087 /* pms.m */; };
+		7592A91611FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
+		7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
 		75DE50B111FB54CA005A0EAC /* LibSpotlight.pch in Headers */ = {isa = PBXBuildFile; fileRef = 75DE50B011FB54CA005A0EAC /* LibSpotlight.pch */; };
 		75E98A4311FB81A500C931AD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		75E98A5711FB84A600C931AD /* libsyminfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98A5611FB84A600C931AD /* libsyminfo.h */; };
@@ -69,12 +75,11 @@
 		75E98A8F11FB84D400C931AD /* unix_standard_mode.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98A7311FB84D400C931AD /* unix_standard_mode.h */; };
 		75E98A9011FB84D400C931AD /* version_number.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98A7411FB84D400C931AD /* version_number.h */; };
 		75E98A9111FB84D400C931AD /* vm_flush_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98A7511FB84D400C931AD /* vm_flush_cache.h */; };
-		75E98AC211FB872A00C931AD /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */; };
-		75E98AD711FB880C00C931AD /* GetMetadataForFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98AD611FB880C00C931AD /* GetMetadataForFile.h */; };
+		75E98AC211FB872A00C931AD /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
+		75E98AD711FB880C00C931AD /* extract.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E98AD611FB880C00C931AD /* extract.h */; };
 		75E98AE911FB89AC00C931AD /* round.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E98AE811FB89AC00C931AD /* round.c */; };
 		75E98AEA11FB89AC00C931AD /* round.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E98AE811FB89AC00C931AD /* round.c */; };
-		75E98C4E11FB986200C931AD /* MOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E98C4C11FB986100C931AD /* MOKit.framework */; };
-		75E98D2A11FB99EF00C931AD /* MOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E98BE711FB974000C931AD /* MOKit.framework */; };
+		75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -83,70 +88,12 @@
 		C88FB7E40674480E006EBB30 /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = C88FB7E30674480E006EBB30 /* schema.strings */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		75E98BE611FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F0C11FA3C36007A0C78 /* MOKit.framework */;
-			remoteInfo = MOKit;
-		};
-		75E98BE811FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F2A11FA3C36007A0C78 /* MOFormatterPalette.palette */;
-			remoteInfo = MOFormatterPalette;
-		};
-		75E98BEA11FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F3D11FA3C36007A0C78 /* RegexTest */;
-			remoteInfo = RegexTest;
-		};
-		75E98BEC11FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F4D11FA3C36007A0C78 /* AssertTest */;
-			remoteInfo = AssertTest;
-		};
-		75E98BEE11FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F5D11FA3C36007A0C78 /* RuntimeTest */;
-			remoteInfo = RuntimeTest;
-		};
-		75E98BF011FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F7411FA3C36007A0C78 /* VLVTest.app */;
-			remoteInfo = VLVTest;
-		};
-		75E98BF211FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611F8B11FA3C37007A0C78 /* TableOutlineTest.app */;
-			remoteInfo = TableOutlineTest;
-		};
-		75E98BF411FB974000C931AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611FA411FA3C37007A0C78 /* VCTest.app */;
-			remoteInfo = VCTest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		2C05A19B06CAA52B00D84F6F /* extract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = extract.m; sourceTree = "<group>"; };
+		7509C11211FE0DEB003FDB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		756123BC11FA5283007A0C78 /* ofile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ofile.c; path = "cctools-750/libstuff/ofile.c"; sourceTree = Darwin; };
@@ -162,7 +109,9 @@
 		756123F011FA546A007A0C78 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = swap_headers.c; path = ../../../Darwin/cctools/libstuff/swap_headers.c; sourceTree = SOURCE_ROOT; };
 		756123F511FA5480007A0C78 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = guess_short_name.c; path = ../../../Darwin/cctools/libstuff/guess_short_name.c; sourceTree = SOURCE_ROOT; };
 		756123FA11FA549F007A0C78 /* set_arch_flag_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = set_arch_flag_name.c; path = ../../../Darwin/cctools/libstuff/set_arch_flag_name.c; sourceTree = SOURCE_ROOT; };
-		75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MOKit.xcodeproj; path = MOKit_2.8/MOKit.xcodeproj; sourceTree = SDKS; };
+		7561259511FE4B13008AD087 /* pms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pms.h; path = /Volumes/leopard/Projects/PickADisk/Sources/pmssource/pmsutility/pms.h; sourceTree = "<absolute>"; };
+		7561259611FE4B13008AD087 /* pms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pms.m; path = /Volumes/leopard/Projects/PickADisk/Sources/pmssource/pmsutility/pms.m; sourceTree = "<absolute>"; };
+		7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetMetadataForFile.c; sourceTree = "<group>"; };
 		75DE50B011FB54CA005A0EAC /* LibSpotlight.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSpotlight.pch; sourceTree = "<group>"; };
 		75E98A4111FB81A500C931AD /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		75E98A4211FB81A500C931AD /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
@@ -195,7 +144,7 @@
 		75E98A7311FB84D400C931AD /* unix_standard_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unix_standard_mode.h; sourceTree = "<group>"; };
 		75E98A7411FB84D400C931AD /* version_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version_number.h; sourceTree = "<group>"; };
 		75E98A7511FB84D400C931AD /* vm_flush_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_flush_cache.h; sourceTree = "<group>"; };
-		75E98AD611FB880C00C931AD /* GetMetadataForFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMetadataForFile.h; sourceTree = "<group>"; };
+		75E98AD611FB880C00C931AD /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extract.h; sourceTree = "<group>"; };
 		75E98AE811FB89AC00C931AD /* round.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = round.c; path = "../../../Darwin/cctools-750/libstuff/round.c"; sourceTree = SOURCE_ROOT; };
 		75E98C4C11FB986100C931AD /* MOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOKit.framework; path = /tmp/MOKit.sym/Deployment/MOKit.framework; sourceTree = "<absolute>"; };
 		8D576316048677EA00EA77CD /* LibSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibSpotlight.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +162,7 @@
 				751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */,
 				7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */,
 				7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */,
-				75E98D2A11FB99EF00C931AD /* MOKit.framework in Frameworks */,
+				7509C11311FE0DEB003FDB3F /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,9 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */,
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
-				75E98C4E11FB986200C931AD /* MOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +196,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7509C11211FE0DEB003FDB3F /* AppKit.framework */,
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
 				7561111111F8C408007A0C78 /* Foundation.framework */,
@@ -299,11 +249,14 @@
 		756111C511F8C5A1007A0C78 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7561259511FE4B13008AD087 /* pms.h */,
+				7561259611FE4B13008AD087 /* pms.m */,
+				7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */,
 				75E98A4111FB81A500C931AD /* test.h */,
 				75E98A4211FB81A500C931AD /* test.m */,
 				75DE50B011FB54CA005A0EAC /* LibSpotlight.pch */,
-				75E98AD611FB880C00C931AD /* GetMetadataForFile.h */,
-				2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */,
+				75E98AD611FB880C00C931AD /* extract.h */,
+				2C05A19B06CAA52B00D84F6F /* extract.m */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
 			);
 			name = Sources;
@@ -312,7 +265,6 @@
 		7561243C11FB25B0007A0C78 /* External Projects */ = {
 			isa = PBXGroup;
 			children = (
-				75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */,
 			);
 			name = "External Projects";
 			sourceTree = "<group>";
@@ -362,21 +314,6 @@
 			path = "../../../Darwin/cctools-750/include/stuff";
 			sourceTree = SOURCE_ROOT;
 		};
-		75E98BDA11FB974000C931AD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75E98BE711FB974000C931AD /* MOKit.framework */,
-				75E98BE911FB974000C931AD /* MOFormatterPalette.palette */,
-				75E98BEB11FB974000C931AD /* RegexTest */,
-				75E98BED11FB974000C931AD /* AssertTest */,
-				75E98BEF11FB974000C931AD /* RuntimeTest */,
-				75E98BF111FB974000C931AD /* VLVTest.app */,
-				75E98BF311FB974000C931AD /* TableOutlineTest.app */,
-				75E98BF511FB974000C931AD /* VCTest.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -414,7 +351,8 @@
 				75E98A8F11FB84D400C931AD /* unix_standard_mode.h in Headers */,
 				75E98A9011FB84D400C931AD /* version_number.h in Headers */,
 				75E98A9111FB84D400C931AD /* vm_flush_cache.h in Headers */,
-				75E98AD711FB880C00C931AD /* GetMetadataForFile.h in Headers */,
+				75E98AD711FB880C00C931AD /* extract.h in Headers */,
+				7561259711FE4B13008AD087 /* pms.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +384,7 @@
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
 				8D576315048677EA00EA77CD /* Rez */,
+				7592A92F11FCF1C600923E3D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -465,14 +404,11 @@
 			buildConfigurationList = 634C98C908E80093002B8C46 /* Build configuration list for PBXProject "LibSpotlight" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* LibSpotlight */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 75E98BDA11FB974000C931AD /* Products */;
-					ProjectRef = 75DE508111FB4F3F005A0EAC /* MOKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* LibSpotlight */,
@@ -480,65 +416,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		75E98BE711FB974000C931AD /* MOKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MOKit.framework;
-			remoteRef = 75E98BE611FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BE911FB974000C931AD /* MOFormatterPalette.palette */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MOFormatterPalette.palette;
-			remoteRef = 75E98BE811FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BEB11FB974000C931AD /* RegexTest */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = RegexTest;
-			remoteRef = 75E98BEA11FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BED11FB974000C931AD /* AssertTest */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = AssertTest;
-			remoteRef = 75E98BEC11FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BEF11FB974000C931AD /* RuntimeTest */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = RuntimeTest;
-			remoteRef = 75E98BEE11FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BF111FB974000C931AD /* VLVTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = VLVTest.app;
-			remoteRef = 75E98BF011FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BF311FB974000C931AD /* TableOutlineTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TableOutlineTest.app;
-			remoteRef = 75E98BF211FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75E98BF511FB974000C931AD /* VCTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = VCTest.app;
-			remoteRef = 75E98BF411FB974000C931AD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D57630F048677EA00EA77CD /* Resources */ = {
@@ -563,6 +440,22 @@
 		};
 /* End PBXRezBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7592A92F11FCF1C600923E3D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -x";
+			shellScript = "\nrm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\nmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		751931D311F7BAFD0038715F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -583,8 +476,10 @@
 				756123F611FA5480007A0C78 /* guess_short_name.c in Sources */,
 				756123FB11FA549F007A0C78 /* set_arch_flag_name.c in Sources */,
 				75E98A4311FB81A500C931AD /* test.m in Sources */,
-				75E98AC211FB872A00C931AD /* GetMetadataForFile.m in Sources */,
+				75E98AC211FB872A00C931AD /* extract.m in Sources */,
 				75E98AE911FB89AC00C931AD /* round.c in Sources */,
+				7592A91611FCEF0A00923E3D /* GetMetadataForFile.c in Sources */,
+				7561259911FE4B13008AD087 /* pms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D576312048677EA00EA77CD /* main.c in Sources */,
-				2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.m in Sources */,
+				2C05A19C06CAA52B00D84F6F /* extract.m in Sources */,
 				756123BE11FA5283007A0C78 /* ofile.c in Sources */,
 				756123C311FA52A0007A0C78 /* arch.c in Sources */,
 				756123C811FA52E9007A0C78 /* libsyminfo.c in Sources */,
@@ -608,6 +503,8 @@
 				756123F711FA5480007A0C78 /* guess_short_name.c in Sources */,
 				756123FC11FA549F007A0C78 /* set_arch_flag_name.c in Sources */,
 				75E98AEA11FB89AC00C931AD /* round.c in Sources */,
+				7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */,
+				7561259811FE4B13008AD087 /* pms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,13 +535,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-					/tmp/MOKit.sym/Deployment,
-				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
@@ -657,10 +547,8 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Spotlight;
-				LIBRARY_SEARCH_PATHS = "";
+				INSTALL_PATH = $HOME/Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -701,7 +589,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Spotlight;
+				INSTALL_PATH = $HOME/Library/Spotlight;
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
@@ -741,7 +629,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Spotlight;
+				INSTALL_PATH = $HOME/Library/Spotlight;
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
@@ -763,54 +651,57 @@
 		634C98CA08E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../../SDK/MOKit_2.8/build/Development/MOKit.framework\"";
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
+				GCC_VERSION = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
-				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
+				HEADER_SEARCH_PATHS = /Volumes/leopard/Sources/Darwin/cctools/include;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Volumes/leopard/Sources/Darwin/cctools/include;
 			};
 			name = Development;
 		};
 		634C98CB08E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../../SDK/MOKit_2.8/build/Development/MOKit.framework\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = 4.0;
+				GCC_VERSION = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
-				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
+				HEADER_SEARCH_PATHS = /Volumes/leopard/Sources/Darwin/cctools/include;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Volumes/leopard/Sources/Darwin/cctools/include;
 			};
 			name = Deployment;
 		};
 		634C98CC08E80093002B8C46 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = ".git *.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../../SDK/MOKit_2.8/build/Development/MOKit.framework\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
-				HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include/";
+				HEADER_SEARCH_PATHS = /Volumes/leopard/Sources/Darwin/cctools/include;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Volumes/leopard/Sources/Darwin/cctools/include;
 			};
 			name = Default;
 		};
@@ -822,6 +713,10 @@
 					"$(inherited)",
 					/tmp/MOKit.sym/Deployment,
 				);
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /usr/local/bin;
 				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
