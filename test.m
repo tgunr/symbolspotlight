@@ -8,10 +8,7 @@ Boolean processfile(const char *path) {
 	
 	CFMutableDictionaryRef attributes = CFDictionaryCreateMutable(NULL,0,NULL,NULL);
 	thePath = CFStringCreateWithCString(NULL,path,kCFStringEncodingUTF8);
-	if (CFStringHasSuffix(thePath, (CFStringRef)@".o")) {
-		// NSLog(@"File: %@", thePath);
-		result = extract(NULL, attributes, (CFStringRef)@"", thePath);
-	}
+	result = extract(NULL, attributes, (CFStringRef)@"", thePath);
 	if (attributes) 
 		CFRelease(attributes);
 	return result;
