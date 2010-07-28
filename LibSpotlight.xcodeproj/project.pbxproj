@@ -696,7 +696,7 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
 				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
@@ -713,6 +713,7 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
 				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
@@ -727,6 +728,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
 				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
@@ -817,7 +819,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
-				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = TestLibTools;
 			};
@@ -831,7 +832,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
-				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = TestLibTools;
 				ZERO_LINK = NO;
@@ -844,7 +844,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
-				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = TestLibTools;
 			};
