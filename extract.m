@@ -86,7 +86,7 @@ Boolean extract(void* thisInterface,
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	NSMutableString *archiveFileContent = [[NSMutableString alloc] init];
 	SymInfoList nmList;
-	char * path;
+	char path[4096];
 	const char * shortName;
 	SymInfoSymbol * symImports;
 	SymInfoSymbol * symExports;
@@ -95,44 +95,44 @@ Boolean extract(void* thisInterface,
 	// setup for the file
 	NSLog(@"Library File: %@", pathToFile);
     syslog(1, "LibSpotlight");
-    path = malloc(4096);
     success = CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8);
-    fh = fopen(path, "r");
-    if (fh) {
-		fclose(fh);
-		nmList = SymInfoCreate(path);
-		if (nmList) {
-			unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
-			unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
-			symExports = SymInfoGetExports(nmList);
-			symImports = SymInfoGetImports(nmList);
-			uint32_t i;
-			for(i = 0; i < symInfoExportCount; i++)
-				[archiveFileContent appendString:SymInfoAsLine(symExports[i])];
-			
-			for(i = 0; i < symInfoImportCount; i++)
-				[archiveFileContent appendString:SymInfoAsLine(symImports[i])];
-			
-			shortName = SymInfoGetShortName(nmList);
-			if (!shortName) {
-				if ([(NSString *)pathToFile isAbsolutePath]) {
-					shortName = [[(NSString *)pathToFile lastPathComponent] cStringUsingEncoding:kCFStringEncodingUTF8];
+	if (success) {
+		fh = fopen(path, "r");
+		if (fh) {
+			fclose(fh);
+			nmList = SymInfoCreate(path);
+			if (nmList) {
+				unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
+				unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
+				symExports = SymInfoGetExports(nmList);
+				symImports = SymInfoGetImports(nmList);
+				uint32_t i;
+				for(i = 0; i < symInfoExportCount; i++)
+					[archiveFileContent appendString:SymInfoAsLine(symExports[i])];
+				
+				for(i = 0; i < symInfoImportCount; i++)
+					[archiveFileContent appendString:SymInfoAsLine(symImports[i])];
+				
+				shortName = SymInfoGetShortName(nmList);
+				if (!shortName) {
+					if ([(NSString *)pathToFile isAbsolutePath]) {
+						shortName = [[(NSString *)pathToFile lastPathComponent] cStringUsingEncoding:kCFStringEncodingUTF8];
+					}
 				}
+				symLibInfo = SymInfoGetLibraryInfo(nmList);
+				//			char * symInfoName = SymInfoGetSymbolName(symImports);
+				//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
+				//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
+				[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:(NSString *)kMDItemTitle];
+				NSString *displayName = [[NSString alloc] initWithCString: shortName encoding: kCFStringEncodingUTF8];
+				[(NSMutableDictionary *)attributes setObject:displayName forKey:(NSString *)kMDItemDisplayName];
+				[(NSMutableDictionary *)attributes setObject:@"Object File" forKey:(NSString *)kMDItemKind];
+				//			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
+				[displayName release];
+				[archiveFileContent release];
+				success=TRUE;
 			}
-			symLibInfo = SymInfoGetLibraryInfo(nmList);
-//			char * symInfoName = SymInfoGetSymbolName(symImports);
-//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
-//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
-			[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:(NSString *)kMDItemTitle];
-			NSString *displayName = [[NSString alloc] initWithCString: shortName encoding: kCFStringEncodingUTF8];
-			[(NSMutableDictionary *)attributes setObject:displayName forKey:(NSString *)kMDItemDisplayName];
-			[(NSMutableDictionary *)attributes setObject:@"Object File" forKey:(NSString *)kMDItemKind];
-            //			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
-            [displayName release];
-            [archiveFileContent release];
-			success=TRUE;
 		}
-        free(path);
 	}
 	[pool release];
 	return success;
