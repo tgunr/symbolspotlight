@@ -3,7 +3,7 @@
 #include <Foundation/Foundation.h>
 #include <stdio.h>
 #include <syslog.h>
-#include <cbt/libsyminfo.h>
+#include "cbt/libsyminfo.h"
 
 /* -----------------------------------------------------------------------------
    Step 1
