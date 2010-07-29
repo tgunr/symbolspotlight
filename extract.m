@@ -66,7 +66,7 @@ SymInfoAsLine(SymInfoSymbol symbol)
 	    printf("Null symbol, not doing a thing\n");
 	    return NULL;
 	}
-	NSString *theString = [[[NSMutableString alloc] initWithCString:SymInfoGetSymbolName(symbol) encoding:kCFStringEncodingUTF8] autorelease];
+	NSString *theString = [[[NSMutableString alloc] initWithCString:SymInfoGetSymbolName(symbol) encoding:NSUTF8StringEncoding] autorelease];
 	theString = [theString stringByAppendingString:@" "];
 	return theString;
 }
@@ -81,22 +81,20 @@ Boolean extract(void* thisInterface,
     /* Return the attribute keys and attribute values in the dict */
     /* Return TRUE if successful, FALSE if there was no data provided */
     
-	Boolean success=NO;
+	Boolean success=FALSE;
 	FILE * fh = NULL;
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableString *archiveFileContent = [[NSMutableString alloc] init];
+	NSMutableString *exportSymbols = [[NSMutableString alloc] init];
+	NSMutableString *importSymbols = [[NSMutableString alloc] init];
 	SymInfoList nmList;
 	char path[4096];
-	const char * shortName;
 	SymInfoSymbol * symImports;
 	SymInfoSymbol * symExports;
 	SymInfoDependencies symLibInfo;
 	
 	// setup for the file
-	NSLog(@"Library File: %@", pathToFile);
-    syslog(1, "LibSpotlight");
-    success = CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8);
-	if (success) {
+	NSLog(@"LibSpotlight: %@", pathToFile);
+	if (CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8)) {
 		fh = fopen(path, "r");
 		if (fh) {
 			fclose(fh);
@@ -108,28 +106,20 @@ Boolean extract(void* thisInterface,
 				symImports = SymInfoGetImports(nmList);
 				uint32_t i;
 				for(i = 0; i < symInfoExportCount; i++)
-					[archiveFileContent appendString:SymInfoAsLine(symExports[i])];
+					[exportSymbols appendString:SymInfoAsLine(symExports[i])];
 				
 				for(i = 0; i < symInfoImportCount; i++)
-					[archiveFileContent appendString:SymInfoAsLine(symImports[i])];
+					[importSymbols appendString:SymInfoAsLine(symImports[i])];
 				
-				shortName = SymInfoGetShortName(nmList);
-				if (!shortName) {
-					if ([(NSString *)pathToFile isAbsolutePath]) {
-						shortName = [[(NSString *)pathToFile lastPathComponent] cStringUsingEncoding:kCFStringEncodingUTF8];
-					}
-				}
 				symLibInfo = SymInfoGetLibraryInfo(nmList);
 				//			char * symInfoName = SymInfoGetSymbolName(symImports);
 				//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
 				//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
-				[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:(NSString *)kMDItemTitle];
-				NSString *displayName = [[NSString alloc] initWithCString: shortName encoding: kCFStringEncodingUTF8];
-				[(NSMutableDictionary *)attributes setObject:displayName forKey:(NSString *)kMDItemDisplayName];
-				[(NSMutableDictionary *)attributes setObject:@"Object File" forKey:(NSString *)kMDItemKind];
-				//			[(NSMutableDictionary *)attributes setObject:archiveFileContent forKey:@"com_polymicrosystems_spotlight_symbols"];
-				[displayName release];
-				[archiveFileContent release];
+				[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
+				[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
+				[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
+				[exportSymbols release];
+				[importSymbols release];
 				success=TRUE;
 			}
 		}
