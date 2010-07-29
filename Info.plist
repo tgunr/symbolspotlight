@@ -5,6 +5,7 @@
 			UTTypeConformsTo = (
 				"public.object-code",
 				"com.apple.mach-o-dylib",
+				"public.unix-executable",
 				"public.data",
 			);
 			UTTypeDescription = "Object File";
