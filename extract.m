@@ -92,35 +92,38 @@ Boolean extract(void* thisInterface,
 	SymInfoSymbol * symExports;
 	SymInfoDependencies symLibInfo;
 	
-	// setup for the file
-	NSLog(@"LibSpotlight: %@", pathToFile);
-	if (CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8)) {
-		fh = fopen(path, "r");
-		if (fh) {
-			fclose(fh);
-			nmList = SymInfoCreate(path);
-			if (nmList) {
-				unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
-				unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
-				symExports = SymInfoGetExports(nmList);
-				symImports = SymInfoGetImports(nmList);
-				uint32_t i;
-				for(i = 0; i < symInfoExportCount; i++)
-					[exportSymbols appendString:SymInfoAsLine(symExports[i])];
-				
-				for(i = 0; i < symInfoImportCount; i++)
-					[importSymbols appendString:SymInfoAsLine(symImports[i])];
-				
-				symLibInfo = SymInfoGetLibraryInfo(nmList);
-				//			char * symInfoName = SymInfoGetSymbolName(symImports);
-				//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
-				//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
-				[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
-				[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
-				[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
-				[exportSymbols release];
-				[importSymbols release];
-				success=TRUE;
+    if (CFStringHasSuffix(pathToFile, (CFStringRef)@".o") || 
+		CFStringHasSuffix(pathToFile, (CFStringRef)@".a") ||
+		CFStringHasSuffix(pathToFile, (CFStringRef)@".dylib") ) {
+		NSLog(@"LibSpotlight: %@", pathToFile);
+		if (CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8)) {
+			fh = fopen(path, "r");
+			if (fh) {
+				fclose(fh);
+				nmList = SymInfoCreate(path);
+				if (nmList) {
+					unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
+					unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
+					symExports = SymInfoGetExports(nmList);
+					symImports = SymInfoGetImports(nmList);
+					uint32_t i;
+					for(i = 0; i < symInfoExportCount; i++)
+						[exportSymbols appendString:SymInfoAsLine(symExports[i])];
+					
+					for(i = 0; i < symInfoImportCount; i++)
+						[importSymbols appendString:SymInfoAsLine(symImports[i])];
+					
+					symLibInfo = SymInfoGetLibraryInfo(nmList);
+					//			char * symInfoName = SymInfoGetSymbolName(symImports);
+					//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
+					//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
+					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
+					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
+					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
+					[exportSymbols release];
+					[importSymbols release];
+					success=TRUE;
+				}
 			}
 		}
 	}
