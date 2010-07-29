@@ -4,10 +4,11 @@
 		{
 			UTTypeConformsTo = (
 				"public.object-code",
+				"com.apple.mach-o-dylib",
 				"public.data",
 			);
 			UTTypeDescription = "Object File";
-			UTTypeIdentifier = "public.object-code";
+			UTTypeIdentifier = "public.object-file";
 			UTTypeReferenceURL = "http://en.wikipedia.org/wiki/Object_file";
 			"UTTypeTagSpecification" = {
 				"public.filename-extension" = (
@@ -23,12 +24,13 @@
 			CFBundleTypeRole = MDImporter;
 			LSItemContentTypes = (
 				"public.object-code",
+				"public.data",
 			);
 		},
 	);
 	CFBundleExecutable = "${EXECUTABLE_NAME}";
 	CFBundleIconFile = "";
-	CFBundleIdentifier = "com.polymicrosystems.spotlight.symbols";
+	CFBundleIdentifier = "com.polymicrosystems.objectfile";
 	CFBundleName = "${PRODUCT_NAME}";
 	"CFBundleInfoDictionaryVersion" = "6.0";
 	CFBundleVersion = "1.0";
