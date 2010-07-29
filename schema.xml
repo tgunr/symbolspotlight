@@ -10,8 +10,8 @@
     </note>
     <attributes>
 		<attribute name="com_polymicrosystems_objectfile_path" multivalued="false" type="CFString"/>
-		<attribute name="com_polymicrosystems_objectfile_export_symbols" multivalued="false" type="CFString"/>
-		<attribute name="com_polymicrosystems_objectfile_import_symbols" multivalued="false" type="CFString"/>
+		<attribute name="com_polymicrosystems_objectfile_export_symbols" multivalued="true" type="CFString"/>
+		<attribute name="com_polymicrosystems_objectfile_import_symbols" multivalued="true" type="CFString"/>
     </attributes>
 
     <types>

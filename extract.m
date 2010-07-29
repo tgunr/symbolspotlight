@@ -67,7 +67,7 @@ SymInfoAsLine(SymInfoSymbol symbol)
 	    return NULL;
 	}
 	NSString *theString = [[[NSMutableString alloc] initWithCString:SymInfoGetSymbolName(symbol) encoding:NSUTF8StringEncoding] autorelease];
-	theString = [theString stringByAppendingString:@" "];
+//	theString = [theString stringByAppendingString:@" "];
 	return theString;
 }
 
@@ -84,8 +84,8 @@ Boolean extract(void* thisInterface,
 	Boolean success=FALSE;
 	FILE * fh = NULL;
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableString *exportSymbols = [[NSMutableString alloc] init];
-	NSMutableString *importSymbols = [[NSMutableString alloc] init];
+	NSMutableArray *exportSymbols = [[NSMutableArray alloc] init];
+	NSMutableArray *importSymbols = [[NSMutableArray alloc] init];
 	SymInfoList nmList;
 	char path[4096];
 	SymInfoSymbol * symImports;
@@ -108,10 +108,10 @@ Boolean extract(void* thisInterface,
 					symImports = SymInfoGetImports(nmList);
 					uint32_t i;
 					for(i = 0; i < symInfoExportCount; i++)
-						[exportSymbols appendString:SymInfoAsLine(symExports[i])];
+						[exportSymbols addObject:SymInfoAsLine(symExports[i])];
 					
 					for(i = 0; i < symInfoImportCount; i++)
-						[importSymbols appendString:SymInfoAsLine(symImports[i])];
+						[importSymbols addObject:SymInfoAsLine(symImports[i])];
 					
 					symLibInfo = SymInfoGetLibraryInfo(nmList);
 					//			char * symInfoName = SymInfoGetSymbolName(symImports);
