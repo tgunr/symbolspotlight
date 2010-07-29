@@ -463,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "\nrm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\nmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n";
+			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\n\trm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\n\tmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
