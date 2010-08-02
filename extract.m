@@ -83,14 +83,12 @@ Boolean extract(void* thisInterface,
     
 	Boolean success=FALSE;
 	FILE * fh = NULL;
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableArray *exportSymbols = [[NSMutableArray alloc] init];
-	NSMutableArray *importSymbols = [[NSMutableArray alloc] init];
-	SymInfoList nmList;
 	char path[4096];
+	SymInfoList nmList;
 	SymInfoSymbol * symImports;
 	SymInfoSymbol * symExports;
-	SymInfoDependencies symLibInfo;
+	SymInfoSymbol symbol;
+	SymInfoDependencies deps;
 	
     if (CFStringHasSuffix(pathToFile, (CFStringRef)@".o") || 
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".a") ||
@@ -102,31 +100,61 @@ Boolean extract(void* thisInterface,
 				fclose(fh);
 				nmList = SymInfoCreate(path);
 				if (nmList) {
+					NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+					NSMutableArray *exportSymbols = [[NSMutableArray alloc] init];
+					NSMutableArray *importSymbols = [[NSMutableArray alloc] init];
+
 					unsigned int symInfoExportCount = SymInfoGetExportCount(nmList);
 					unsigned int symInfoImportCount = SymInfoGetImportCount(nmList);
 					symExports = SymInfoGetExports(nmList);
 					symImports = SymInfoGetImports(nmList);
 					uint32_t i;
-					for(i = 0; i < symInfoExportCount; i++)
-						[exportSymbols addObject:SymInfoAsLine(symExports[i])];
+					char * symName;
+					const char * symArch;
+					char * symOrdinal;
+					for(i = 0; i < symInfoExportCount; i++) {
+						symbol = symExports[i];	
+						symName = SymInfoGetSymbolName(symbol);
+						symArch = SymInfoGetSymbolArch(symbol);
+						symOrdinal = SymInfoGetSymbolOrdinal(symbol);
+						[exportSymbols addObject:SymInfoAsLine(symbol)];
+					}
 					
-					for(i = 0; i < symInfoImportCount; i++)
+					for(i = 0; i < symInfoImportCount; i++) {
+						symbol = symImports[i];	
+						symName = SymInfoGetSymbolName(symbol);
+						symArch = SymInfoGetSymbolArch(symbol);
+						symOrdinal = SymInfoGetSymbolOrdinal(symbol);
 						[importSymbols addObject:SymInfoAsLine(symImports[i])];
+					}
 					
-					symLibInfo = SymInfoGetLibraryInfo(nmList);
-					//			char * symInfoName = SymInfoGetSymbolName(symImports);
-					//			const char * symInfoArch = SymInfoGetSymbolArch(symImports);
-					//			char * symInfoOrdinal = SymInfoGetSymbolOrdinal(symImports);
+					deps = SymInfoGetLibraryInfo(nmList);
+					unsigned int nSubFrameworks = SymInfoGetSubFrameworkCount(deps);
+					char ** subFrameworks = SymInfoGetSubFrameworks(deps);
+					unsigned int nSubUmbrellas = SymInfoGetSubUmbrellaCount(deps);
+					char ** subUmbrellas = SymInfoGetSubUmbrellas(deps);
+					char * subFramework;
+					char * subUmbrella;
+
+					for(i = 0; i < nSubFrameworks; i++) {
+						subFramework = subFrameworks[i];
+					}
+					
+					for(i = 0; i < nSubUmbrellas; i++) {
+						subUmbrella = subUmbrellas[i];
+					}
+					
 					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
 					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
+					SymInfoFree(nmList);
 					[exportSymbols release];
 					[importSymbols release];
+					[pool release];
 					success=TRUE;
 				}
 			}
 		}
 	}
-	[pool release];
 	return success;
 }
