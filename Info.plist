@@ -13,8 +13,8 @@
 			UTTypeReferenceURL = "http://en.wikipedia.org/wiki/Object_file";
 			"UTTypeTagSpecification" = {
 				"public.filename-extension" = (
-					o,
 					a,
+					o,
 					dylib,
 				);
 			};
@@ -25,6 +25,7 @@
 			CFBundleTypeRole = MDImporter;
 			LSItemContentTypes = (
 				"public.object-code",
+				"com.apple.mach-o-dylib",
 				"public.data",
 			);
 		},
