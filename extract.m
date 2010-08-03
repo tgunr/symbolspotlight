@@ -72,7 +72,7 @@ SymInfoAsLine(SymInfoSymbol symbol)
 }
 
 
-Boolean extract(void* thisInterface, 
+Boolean extract_object_file(void* thisInterface, 
 			   CFMutableDictionaryRef attributes, 
 			   CFStringRef contentTypeUTI,
 			   CFStringRef pathToFile)

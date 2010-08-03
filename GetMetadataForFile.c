@@ -81,7 +81,7 @@
 struct NSString;
 struct NSMutableDictionary;
 
-extern int extract(struct NSString *path, struct NSMutableDictionary *attributes);
+extern int extract_object_file(struct NSString *path, struct NSMutableDictionary *attributes);
 
 
 /* -----------------------------------------------------------------------------
@@ -97,5 +97,5 @@ Boolean GetMetadataForFile(void* thisInterface,
 			   CFStringRef pathToFile)
 {
 
-	return extract((struct NSString *)pathToFile, (struct NSMutableDictionary *)attributes);
+	return extract_object_file((struct NSString *)pathToFile, (struct NSMutableDictionary *)attributes);
 }
