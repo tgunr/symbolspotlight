@@ -147,6 +147,18 @@ Boolean extract_object_file(void* thisInterface,
 					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
 					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
+					[(NSMutableDictionary *)attributes setObject:@"public.object-file" forKey: (NSString *)kMDItemContentType];
+					NSMutableArray * mdItemContentTypeTree = [(NSMutableDictionary *)attributes objectForKey: (NSString *)kMDItemContentTypeTree];
+					if (mdItemContentTypeTree) {
+						[mdItemContentTypeTree insertObject: @"public.object-file" atIndex: 0];
+					} else{
+						NSArray *contentTree = [NSArray arrayWithObjects:@"public.object-file", @"public.object-code", @"public.data",
+												@"public.item", nil];
+						mdItemContentTypeTree = [NSMutableArray arrayWithArray:contentTree];
+					}
+		
+					[(NSMutableDictionary *)attributes setObject:mdItemContentTypeTree forKey: (NSString *)kMDItemContentTypeTree];
+					[(NSMutableDictionary *)attributes setObject:@"public.object-file" forKey: (NSString *)kMDItemContentType];
 					SymInfoFree(nmList);
 					[exportSymbols release];
 					[importSymbols release];

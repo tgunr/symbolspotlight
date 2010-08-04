@@ -1,50 +1,83 @@
-{
-	"CFBundleDevelopmentRegion" = English;
-	"UTExportedTypeDeclarations" = (
-		{
-			UTTypeConformsTo = (
-				"public.object-code",
-				"com.apple.mach-o-dylib",
-				"public.unix-executable",
-				"public.data",
-			);
-			UTTypeDescription = "Object File";
-			UTTypeIdentifier = "public.object-file";
-			UTTypeReferenceURL = "http://en.wikipedia.org/wiki/Object_file";
-			"UTTypeTagSpecification" = {
-				"public.filename-extension" = (
-					a,
-					o,
-					dylib,
-				);
-			};
-		},
-	);
-	"CFBundleDocumentTypes" = (
-		{
-			CFBundleTypeRole = MDImporter;
-			LSItemContentTypes = (
-				"public.object-code",
-				"com.apple.mach-o-dylib",
-				"public.data",
-			);
-		},
-	);
-	CFBundleExecutable = "${EXECUTABLE_NAME}";
-	CFBundleIconFile = "";
-	CFBundleIdentifier = "com.polymicrosystems.objectfile";
-	CFBundleName = "${PRODUCT_NAME}";
-	"CFBundleInfoDictionaryVersion" = "6.0";
-	CFBundleVersion = "1.0";
-	"CFPlugInDynamicRegisterFunction" = "";
-	"CFPlugInDynamicRegistration" = NO;
-	CFPlugInFactories = {
-		"ADFEEB66-145B-41B7-87A4-9149A9FD0B77" = "MetadataImporterPluginFactory";
-	};
-	CFPlugInTypes = {
-		"8B08C4BF-415B-11D8-B3F9-0003936726FC" = (
-			"ADFEEB66-145B-41B7-87A4-9149A9FD0B77",
-		);
-	};
-	"CFPlugInUnloadFunction" = "";
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>a</string>
+				<string>o</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Object File</string>
+			<key>CFBundleTypeRole</key>
+			<string>MDImporter</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.object-file</string>
+				<string>public.object-code</string>
+				<string>public.data</string>
+				<string>dyn.ah62d4rv4ge80c</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.polymicrosystems.spotlight.objectfile</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>ADFEEB66-145B-41B7-87A4-9149A9FD0B77</key>
+		<string>MetadataImporterPluginFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>8B08C4BF-415B-11D8-B3F9-0003936726FC</key>
+		<array>
+			<string>ADFEEB66-145B-41B7-87A4-9149A9FD0B77</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Object File</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>dyn.ah62d4rv4ge80c</string>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeIconFile</key>
+			<string>Draw2File</string>
+			<key>UTTypeIdentifier</key>
+			<string>public.object-file</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>a</string>
+					<string>o</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
