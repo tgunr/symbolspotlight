@@ -5,7 +5,15 @@
 Boolean processFile(NSString *path) {
 	Boolean result;
 	
-	CFMutableDictionaryRef attributes = CFDictionaryCreateMutable(NULL,0,NULL,NULL);
+	CFMutableDictionaryRef attributes; // = CFDictionaryCreateMutable(NULL,0,NULL,NULL);	
+	MDItemRef ref = MDItemCreate(NULL, (CFStringRef)path);
+	
+	CFArrayRef a = MDItemCopyAttributeNames(ref);
+	CFDictionaryRef attributesRef = MDItemCopyAttributes(ref, a);
+	attributes = CFDictionaryCreateMutableCopy(NULL, (CFIndex)0,attributesRef);
+	
+	CFRelease(ref);
+	CFRelease(a);
 	result = extract_object_file(NULL, attributes, (CFStringRef)@"", (CFStringRef)path);
 	if (attributes) 
 		CFRelease(attributes);
