@@ -7,6 +7,8 @@
  *
  */
 
+#define kPublicObjectFileString @"public.object-file"
+
 Boolean extract_object_file(void* thisInterface, 
 						   CFMutableDictionaryRef attributes, 
 						   CFStringRef contentTypeUTI,
