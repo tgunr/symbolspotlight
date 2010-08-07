@@ -5,6 +5,7 @@
 #include <syslog.h>
 #include "cbt/libsyminfo.h"
 #import "extract.h"
+#import "pms.h"
 
 /* -----------------------------------------------------------------------------
    Step 1
@@ -74,22 +75,22 @@ SymInfoAsLine(SymInfoSymbol symbol)
 
 
 Boolean extract_object_file(void* thisInterface, 
-			   CFMutableDictionaryRef attributes, 
-			   CFStringRef contentTypeUTI,
-			   CFStringRef pathToFile)
+							CFMutableDictionaryRef attributes, 
+							CFStringRef contentTypeUTI,
+							CFStringRef pathToFile)
 {
     /* Pull any available metadata from the file at the specified path */
     /* Return the attribute keys and attribute values in the dict */
     /* Return TRUE if successful, FALSE if there was no data provided */
     
-	Boolean success=FALSE;
-	FILE * fh = NULL;
-	char path[4096];
-	SymInfoList nmList;
-	SymInfoSymbol * symImports;
-	SymInfoSymbol * symExports;
-	SymInfoSymbol symbol;
-	SymInfoDependencies deps;
+    Boolean success=FALSE;
+    FILE * fh = NULL;
+    char path[4096];
+    SymInfoList nmList;
+    SymInfoSymbol * symImports;
+    SymInfoSymbol * symExports;
+    SymInfoSymbol symbol;
+    SymInfoDependencies deps;
 	
     if (CFStringHasSuffix(pathToFile, (CFStringRef)@".o") || 
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".a") ||
@@ -149,42 +150,59 @@ Boolean extract_object_file(void* thisInterface,
 					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
 					[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
-					NSMutableArray * mdItemContentTypeTree = [(NSMutableDictionary *)attributes objectForKey: (NSString *)kMDItemContentTypeTree];
-					if (mdItemContentTypeTree) {
-						NSMutableArray * foundIndexes = [NSMutableArray arrayWithCapacity: 2];
-						NSUInteger foundCount = 0;
-						NSEnumerator *enumerator = [mdItemContentTypeTree objectEnumerator];
-						id anObject;
-						int count = 0;
-						while ((anObject = [enumerator nextObject])) {
-							if ([anObject isEqualToString:kPublicObjectFileString]) {
-								foundCount++;
-								[foundIndexes addObject: [NSNumber numberWithInteger: count]];
-							}
-							count++;
-						}						
-						// Should only be 1 kPublicObjectFileString
-						switch (foundCount) {
-							case -1:
-								[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
-								break;
-							case 1:
-								break;
-							default:
-								for(i = 1; i < foundCount; i++) {
-									NSNumber * itemToRemove = [foundIndexes objectAtIndex:i];
-									[mdItemContentTypeTree removeObjectAtIndex: [itemToRemove integerValue]];
+					
+					NSArray *treeArray = [(NSMutableDictionary *)attributes objectForKey: (NSString *)kMDItemContentTypeTree];
+					if (treeArray) {
+						NSMutableArray * mdItemContentTypeTree = [[NSMutableArray alloc ] initWithArray: treeArray copyItems:TRUE];
+						[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
+						[mdItemContentTypeTree addObject: kPublicObjectFileString];
+						PMSYM(mdItemContentTypeTree);
+						if (mdItemContentTypeTree) {
+							NSString * aString = [NSString string];
+							NSMutableArray * foundIndexes = [NSMutableArray arrayWithCapacity: 2];
+							NSUInteger foundCount = 0;
+							NSEnumerator *enumerator = [mdItemContentTypeTree objectEnumerator];
+							int count = 0;
+							while ((aString = (NSString *)[enumerator nextObject])) {
+								if ([aString isEqualToString:kPublicObjectFileString]) {
+									foundCount++;
+									[foundIndexes addObject: [NSNumber numberWithInteger: count]];
 								}
-								break;
+								count++;
+							}						
+
+							// Should only be 1 kPublicObjectFileString
+							PMLOG(1, @"foundcount: %d", foundCount);
+							switch (foundCount) {
+								case 0:
+									[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
+									PMSYM(mdItemContentTypeTree);
+									break;
+								case 1:
+									break;
+								default:
+									if (foundCount > 1) {
+										if ([foundIndexes count] > 1) {
+											NSMutableIndexSet * itemsToRemove = [[NSMutableIndexSet alloc] init];
+											for(i = 1; i < [foundIndexes count]; i++) {
+												[itemsToRemove addIndex: [[foundIndexes objectAtIndex:i] integerValue]];
+											}
+											PMSYM(itemsToRemove);
+											[mdItemContentTypeTree removeObjectsAtIndexes: itemsToRemove];
+										}
+									}
+									break;
+							}
+						} else{
+							NSArray *contentTree = [NSArray arrayWithObjects:kPublicObjectFileString, @"public.object-code", @"public.data",
+													@"public.item", nil];
+							mdItemContentTypeTree = [NSMutableArray arrayWithArray:contentTree];
 						}
-					} else{
-						NSArray *contentTree = [NSArray arrayWithObjects:kPublicObjectFileString, @"public.object-code", @"public.data",
-												@"public.item", nil];
-						mdItemContentTypeTree = [NSMutableArray arrayWithArray:contentTree];
+						PMSYM(mdItemContentTypeTree);
+						[(NSMutableDictionary *)attributes setObject:mdItemContentTypeTree forKey: (NSString *)kMDItemContentTypeTree];
+						[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
 					}
-		
-					[(NSMutableDictionary *)attributes setObject:mdItemContentTypeTree forKey: (NSString *)kMDItemContentTypeTree];
-					[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
+                    
 					SymInfoFree(nmList);
 					[exportSymbols release];
 					[importSymbols release];
