@@ -56,29 +56,5 @@
 	</dict>
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
-	<key>UTExportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeDescription</key>
-			<string>Object File</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>dyn.ah62d4rv4ge80c</string>
-				<string>public.data</string>
-			</array>
-			<key>UTTypeIconFile</key>
-			<string>Draw2File</string>
-			<key>UTTypeIdentifier</key>
-			<string>public.object-file</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>a</string>
-					<string>o</string>
-				</array>
-			</dict>
-		</dict>
-	</array>
 </dict>
 </plist>
