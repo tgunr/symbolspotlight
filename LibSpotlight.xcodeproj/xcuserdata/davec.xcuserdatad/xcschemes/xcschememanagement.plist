@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TestLibTools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>testlib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,8 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>LibSpotlight.mdimporter</key>
+		<true/>
+		<key>TestLibTools</key>
 		<true/>
 		<key>testlib</key>
 		<true/>
