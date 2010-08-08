@@ -95,7 +95,7 @@ Boolean extract_object_file(void* thisInterface,
     if (CFStringHasSuffix(pathToFile, (CFStringRef)@".o") || 
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".a") ||
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".dylib") ) {
-		NSLog(@"LibSpotlight: %@", pathToFile);
+		NSLog(@"SymbolSpotlighter: %@", pathToFile);
 		if (CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8)) {
 			fh = fopen(path, "r");
 			if (fh) {

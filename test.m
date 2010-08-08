@@ -29,7 +29,7 @@ void processFolder(NSString * path) {
 		NSDirectoryEnumerator *dirEnumerator = [fileManager enumeratorAtPath:path];
 		while ((file = [dirEnumerator nextObject])) {
 			file = [path stringByAppendingPathComponent:file];
-			//NSLog(@"LibSpotlight testing: %@", file);
+			//NSLog(@"SymbolFinder testing: %@", file);
 			processFolder(file);
 		}
 	} else

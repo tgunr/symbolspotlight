@@ -1,9 +1,8 @@
 /*
  *  test.h
- *  Forth Spotlighter
  *
  *  Created by Dave on 5/6/05.
- *  Copyright 2005 __MyCompanyName__. All rights reserved.
+ *  Copyright 2005 PolyMicro Systems. All rights reserved.
  *
  */
 
