@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LibSymbolFinder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>TestLibTools.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>mySpot.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>testlib.xcscheme</key>
 		<dict>
@@ -24,7 +34,13 @@
 	<dict>
 		<key>LibSpotlight.mdimporter</key>
 		<true/>
+		<key>LibSymbolFinder.app</key>
+		<true/>
 		<key>TestLibTools</key>
+		<true/>
+		<key>mySpot.bundle</key>
+		<true/>
+		<key>mySpot.mdimporter</key>
 		<true/>
 		<key>testlib</key>
 		<true/>
