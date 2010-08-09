@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'LibSymbolFinder' target in the 'LibSymbolFinder' project
-//
-
-#ifdef __OBJC__
-	#import <Cocoa/Cocoa.h>
-#endif
-
