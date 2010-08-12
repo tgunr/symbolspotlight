@@ -156,7 +156,6 @@ Boolean extract_object_file(void* thisInterface,
 						NSMutableArray * mdItemContentTypeTree = [[NSMutableArray alloc ] initWithArray: treeArray copyItems:TRUE];
 						[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
 						[mdItemContentTypeTree addObject: kPublicObjectFileString];
-						PMSYM(mdItemContentTypeTree);
 						if (mdItemContentTypeTree) {
 							NSString * aString = [NSString string];
 							NSMutableArray * foundIndexes = [NSMutableArray arrayWithCapacity: 2];
@@ -176,7 +175,6 @@ Boolean extract_object_file(void* thisInterface,
 							switch (foundCount) {
 								case 0:
 									[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
-									PMSYM(mdItemContentTypeTree);
 									break;
 								case 1:
 									break;
@@ -187,7 +185,6 @@ Boolean extract_object_file(void* thisInterface,
 											for(i = 1; i < [foundIndexes count]; i++) {
 												[itemsToRemove addIndex: [[foundIndexes objectAtIndex:i] integerValue]];
 											}
-											PMSYM(itemsToRemove);
 											[mdItemContentTypeTree removeObjectsAtIndexes: itemsToRemove];
 										}
 									}
@@ -198,7 +195,6 @@ Boolean extract_object_file(void* thisInterface,
 													@"public.item", nil];
 							mdItemContentTypeTree = [NSMutableArray arrayWithArray:contentTree];
 						}
-						PMSYM(mdItemContentTypeTree);
 						[(NSMutableDictionary *)attributes setObject:mdItemContentTypeTree forKey: (NSString *)kMDItemContentTypeTree];
 						[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
 					}
