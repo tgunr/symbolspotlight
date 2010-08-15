@@ -73,7 +73,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 75AF2297120095A0003F2B8F /* cctools.static */;
+			remoteGlobalIDString = 75AF2297120095A0003F2B8F;
 			remoteInfo = cctools.static;
 		};
 		75AF225312009227003F2B8F /* PBXContainerItemProxy */ = {
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				7519F320120085C2003EB81D /* cctools.xcodeproj */,
-				7586935F121131070065B6BE /* pmsutility */,
+				7586935F121131070065B6BE /* pms */,
 				756111C511F8C5A1007A0C78 /* Sources */,
 				759EFB6D1200B637009F6F92 /* libstuff */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -256,15 +256,15 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		7586935F121131070065B6BE /* pmsutility */ = {
+		7586935F121131070065B6BE /* pms */ = {
 			isa = PBXGroup;
 			children = (
 				750816BF12113A4F00B80047 /* pms.h */,
 				750816C012113A4F00B80047 /* pms.m */,
 			);
-			name = pmsutility;
-			path = ../pmsutility;
-			sourceTree = "<group>";
+			name = pms;
+			path = ../pms;
+			sourceTree = SOURCE_ROOT;
 		};
 		759EFB6D1200B637009F6F92 /* libstuff */ = {
 			isa = PBXGroup;
