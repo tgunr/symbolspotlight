@@ -3,7 +3,7 @@
 #include <Foundation/Foundation.h>
 #include <stdio.h>
 #include <syslog.h>
-#include "cbt/libsyminfo.h"
+#import <CCTools/libsyminfo.h>
 #import "extract.h"
 #import "pms.h"
 
