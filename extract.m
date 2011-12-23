@@ -52,12 +52,10 @@ void
 SymInfoPrintSymbol(SymInfoSymbol symbol)
 {
 	if(symbol == NULL){
-	    printf("Null symbol, not doing a thing\n");
+	    PMLOG(1, @"Null symbol, not doing a thing\n");
 	    return;
 	}
-	NSLog(@"symbol name: %s\n", SymInfoGetSymbolName(symbol));
-	NSLog(@"symbol arch: %s\n", SymInfoGetSymbolArch(symbol));
-	NSLog(@"symbol ordinal: %s\n", SymInfoGetSymbolOrdinal(symbol));
+	NSLog(@"SymbolSpotlighter: symbol name: %s arch: %s ordinal: %s\n", SymInfoGetSymbolName(symbol), SymInfoGetSymbolArch(symbol), SymInfoGetSymbolOrdinal(symbol));
 }
 
 
@@ -65,7 +63,7 @@ NSString *
 SymInfoAsLine(SymInfoSymbol symbol)
 {
 	if(symbol == NULL){
-	    printf("Null symbol, not doing a thing\n");
+	    PMLOG(1, @"Null symbol, not doing a thing\n");
 	    return NULL;
 	}
 	NSString *theString = [[[NSMutableString alloc] initWithCString:SymInfoGetSymbolName(symbol) encoding:NSUTF8StringEncoding] autorelease];
@@ -171,7 +169,7 @@ Boolean extract_object_file(void* thisInterface,
 							}						
 
 							// Should only be 1 kPublicObjectFileString
-							PMLOG(1, @"foundcount: %d", foundCount);
+							PMLOG(2, @"foundcount: %d", foundCount);
 							switch (foundCount) {
 								case 0:
 									[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
