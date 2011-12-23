@@ -462,7 +462,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\n\trm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\n\tmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
+			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\necho\trm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\necho\tmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -582,6 +582,7 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
+				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -609,6 +610,7 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
+				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
