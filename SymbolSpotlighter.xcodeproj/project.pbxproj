@@ -11,13 +11,44 @@
 		750816C212113A4F00B80047 /* pms.m in Sources */ = {isa = PBXBuildFile; fileRef = 750816C012113A4F00B80047 /* pms.m */; };
 		750816C312113A4F00B80047 /* pms.m in Sources */ = {isa = PBXBuildFile; fileRef = 750816C012113A4F00B80047 /* pms.m */; };
 		7509C11311FE0DEB003FDB3F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509C11211FE0DEB003FDB3F /* AppKit.framework */; };
-		75189DFC121143AA000ACAD3 /* libcctools.static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AF229B120095A0003F2B8F /* libcctools.static.a */; };
 		7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
 		756110D711F8C305007A0C78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; };
 		7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
 		7592A91611FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
 		7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
+		759CDCE214A48FAB00BEC813 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
+		759CDCE314A48FAB00BEC813 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6F1200B659009F6F92 /* arch.c */; };
+		759CDCE414A48FAB00BEC813 /* arch_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB701200B659009F6F92 /* arch_usage.c */; };
+		759CDCE514A48FAB00BEC813 /* best_arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB711200B659009F6F92 /* best_arch.c */; };
+		759CDCE614A48FAB00BEC813 /* bytesex.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB721200B659009F6F92 /* bytesex.c */; };
+		759CDCE714A48FAB00BEC813 /* checkout.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB731200B659009F6F92 /* checkout.c */; };
+		759CDCE814A48FAB00BEC813 /* coff_bytesex.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB741200B659009F6F92 /* coff_bytesex.c */; };
+		759CDCE914A48FAB00BEC813 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB751200B659009F6F92 /* crc32.c */; };
+		759CDCEA14A48FAB00BEC813 /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB761200B659009F6F92 /* errors.c */; };
+		759CDCEB14A48FAB00BEC813 /* execute.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB771200B659009F6F92 /* execute.c */; };
+		759CDCEC14A48FAB00BEC813 /* fatal_arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB781200B659009F6F92 /* fatal_arch.c */; };
+		759CDCED14A48FAB00BEC813 /* fatals.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB791200B659009F6F92 /* fatals.c */; };
+		759CDCEE14A48FAB00BEC813 /* get_arch_from_host.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7A1200B659009F6F92 /* get_arch_from_host.c */; };
+		759CDCEF14A48FAB00BEC813 /* get_toc_byte_sex.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7B1200B659009F6F92 /* get_toc_byte_sex.c */; };
+		759CDCF014A48FAB00BEC813 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7C1200B659009F6F92 /* guess_short_name.c */; };
+		759CDCF114A48FAB00BEC813 /* hash_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7D1200B659009F6F92 /* hash_string.c */; };
+		759CDCF214A48FAB00BEC813 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7E1200B659009F6F92 /* libsyminfo.c */; };
+		759CDCF314A48FAB00BEC813 /* lto.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7F1200B659009F6F92 /* lto.c */; };
+		759CDCF414A48FAB00BEC813 /* macosx_deployment_target.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB801200B659009F6F92 /* macosx_deployment_target.c */; };
+		759CDCF514A48FAB00BEC813 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB811200B659009F6F92 /* ofile.c */; };
+		759CDCF614A48FAB00BEC813 /* ofile_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB821200B659009F6F92 /* ofile_error.c */; };
+		759CDCF714A48FAB00BEC813 /* ofile_get_word.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB831200B659009F6F92 /* ofile_get_word.c */; };
+		759CDCF814A48FAB00BEC813 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB841200B659009F6F92 /* print.c */; };
+		759CDCF914A48FAB00BEC813 /* reloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB851200B659009F6F92 /* reloc.c */; };
+		759CDCFA14A48FAB00BEC813 /* round.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB861200B659009F6F92 /* round.c */; };
+		759CDCFB14A48FAB00BEC813 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB871200B659009F6F92 /* set_arch_flag_name.c */; };
+		759CDCFC14A48FAB00BEC813 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB881200B659009F6F92 /* swap_headers.c */; };
+		759CDCFD14A48FAB00BEC813 /* symbol_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB891200B659009F6F92 /* symbol_list.c */; };
+		759CDCFE14A48FAB00BEC813 /* unix_standard_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB8A1200B659009F6F92 /* unix_standard_mode.c */; };
+		759CDCFF14A48FAB00BEC813 /* version_number.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB8B1200B659009F6F92 /* version_number.c */; };
+		759CDD0014A48FAB00BEC813 /* vm_flush_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB8C1200B659009F6F92 /* vm_flush_cache.c */; };
+		759CDD0114A48FAB00BEC813 /* writeout.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB8D1200B659009F6F92 /* writeout.c */; };
 		759EFB8E1200B659009F6F92 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
 		759EFB8F1200B659009F6F92 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6F1200B659009F6F92 /* arch.c */; };
 		759EFB901200B659009F6F92 /* arch_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB701200B659009F6F92 /* arch_usage.c */; };
@@ -56,7 +87,6 @@
 		759EFBF21200BFF3009F6F92 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		759EFBF31200BFF7009F6F92 /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
 		759EFBFB1200C012009F6F92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509C11211FE0DEB003FDB3F /* AppKit.framework */; };
-		75AF22F412009750003F2B8F /* libcctools.static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AF229B120095A0003F2B8F /* libcctools.static.a */; };
 		75E98A4311FB81A500C931AD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		75E98AC211FB872A00C931AD /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
 		75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
@@ -68,43 +98,17 @@
 		C88FB7E40674480E006EBB30 /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = C88FB7E30674480E006EBB30 /* schema.strings */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		75189DFE121143CE000ACAD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 75AF2297120095A0003F2B8F;
-			remoteInfo = cctools.static;
+/* Begin PBXCopyFilesBuildPhase section */
+		759CDCDE14A47EA900BEC813 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75AF225312009227003F2B8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC0630554660B00DB518D;
-			remoteInfo = cctools;
-		};
-		75AF225512009227003F2B8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75611C8511F8D826007A0C78;
-			remoteInfo = CCTools;
-		};
-		75AF229A120095A0003F2B8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75AF2298120095A0003F2B8F;
-			remoteInfo = cctools.static;
-		};
-		75AF22F012009719003F2B8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 75AF2297120095A0003F2B8F;
-			remoteInfo = cctools.static;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -115,7 +119,6 @@
 		750816C012113A4F00B80047 /* pms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pms.m; sourceTree = "<group>"; };
 		7509C11211FE0DEB003FDB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
-		7519F320120085C2003EB81D /* cctools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cctools.xcodeproj; path = "/Volumes/leopard/Sources/Darwin/cctools-750/cctools/cctools.xcodeproj"; sourceTree = "<absolute>"; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetMetadataForFile.c; sourceTree = "<group>"; };
 		759EFB651200B5EC009F6F92 /* TestLibTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLibTools; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +173,6 @@
 				7519589B11F7D7DB0038715F /* CoreFoundation.framework in Frameworks */,
 				7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */,
 				7509C11311FE0DEB003FDB3F /* AppKit.framework in Frameworks */,
-				75AF22F412009750003F2B8F /* libcctools.static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +189,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75189DFC121143AA000ACAD3 /* libcctools.static.a in Frameworks */,
 				75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */,
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
@@ -200,8 +201,7 @@
 		089C166AFE841209C02AAC07 /* LibSpotlight */ = {
 			isa = PBXGroup;
 			children = (
-				7519F320120085C2003EB81D /* cctools.xcodeproj */,
-				7586935F121131070065B6BE /* pms */,
+				7586935F121131070065B6BE /* PMSUtility */,
 				756111C511F8C5A1007A0C78 /* Sources */,
 				759EFB6D1200B637009F6F92 /* libstuff */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -256,15 +256,15 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		7586935F121131070065B6BE /* pms */ = {
+		7586935F121131070065B6BE /* PMSUtility */ = {
 			isa = PBXGroup;
 			children = (
 				750816BF12113A4F00B80047 /* pms.h */,
 				750816C012113A4F00B80047 /* pms.m */,
 			);
-			name = pms;
-			path = ../pms;
-			sourceTree = SOURCE_ROOT;
+			name = PMSUtility;
+			path = ../../PMSUtility;
+			sourceTree = "<group>";
 		};
 		759EFB6D1200B637009F6F92 /* libstuff */ = {
 			isa = PBXGroup;
@@ -303,17 +303,7 @@
 				759EFB8D1200B659009F6F92 /* writeout.c */,
 			);
 			name = libstuff;
-			path = ../cctools/libstuff;
-			sourceTree = SOURCE_ROOT;
-		};
-		75AF224E12009227003F2B8F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75AF225412009227003F2B8F /* libcctools.dylib */,
-				75AF229B120095A0003F2B8F /* libcctools.static.a */,
-				75AF225612009227003F2B8F /* CCTools.framework */,
-			);
-			name = Products;
+			path = cctools/libstuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +329,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				75AF22F112009719003F2B8F /* PBXTargetDependency */,
 			);
 			name = Test;
 			productName = testlib;
@@ -368,6 +357,7 @@
 			buildPhases = (
 				8D57630E048677EA00EA77CD /* Headers */,
 				8D57630F048677EA00EA77CD /* Resources */,
+				759CDCDE14A47EA900BEC813 /* CopyFiles */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
 				8D576315048677EA00EA77CD /* Rez */,
@@ -376,7 +366,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				75189DFF121143CE000ACAD3 /* PBXTargetDependency */,
 			);
 			name = SymbolSpotlighter;
 			productInstallPath = /Library/Spotlight;
@@ -391,18 +380,13 @@
 			isa = PBXProject;
 			buildConfigurationList = 634C98C908E80093002B8C46 /* Build configuration list for PBXProject "SymbolSpotlighter" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* LibSpotlight */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 75AF224E12009227003F2B8F /* Products */;
-					ProjectRef = 7519F320120085C2003EB81D /* cctools.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* SymbolSpotlighter */,
@@ -411,30 +395,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		75AF225412009227003F2B8F /* libcctools.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libcctools.dylib;
-			remoteRef = 75AF225312009227003F2B8F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75AF225612009227003F2B8F /* CCTools.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CCTools.framework;
-			remoteRef = 75AF225512009227003F2B8F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75AF229B120095A0003F2B8F /* libcctools.static.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcctools.static.a;
-			remoteRef = 75AF229A120095A0003F2B8F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D57630F048677EA00EA77CD /* Resources */ = {
@@ -471,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\n\trm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\n\tmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
+			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\nrm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\nmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -535,6 +495,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759CDCE214A48FAB00BEC813 /* allocate.c in Sources */,
+				759CDCE314A48FAB00BEC813 /* arch.c in Sources */,
+				759CDCE414A48FAB00BEC813 /* arch_usage.c in Sources */,
+				759CDCE514A48FAB00BEC813 /* best_arch.c in Sources */,
+				759CDCE614A48FAB00BEC813 /* bytesex.c in Sources */,
+				759CDCE714A48FAB00BEC813 /* checkout.c in Sources */,
+				759CDCE814A48FAB00BEC813 /* coff_bytesex.c in Sources */,
+				759CDCE914A48FAB00BEC813 /* crc32.c in Sources */,
+				759CDCEA14A48FAB00BEC813 /* errors.c in Sources */,
+				759CDCEB14A48FAB00BEC813 /* execute.c in Sources */,
+				759CDCEC14A48FAB00BEC813 /* fatal_arch.c in Sources */,
+				759CDCED14A48FAB00BEC813 /* fatals.c in Sources */,
+				759CDCEE14A48FAB00BEC813 /* get_arch_from_host.c in Sources */,
+				759CDCEF14A48FAB00BEC813 /* get_toc_byte_sex.c in Sources */,
+				759CDCF014A48FAB00BEC813 /* guess_short_name.c in Sources */,
+				759CDCF114A48FAB00BEC813 /* hash_string.c in Sources */,
+				759CDCF214A48FAB00BEC813 /* libsyminfo.c in Sources */,
+				759CDCF314A48FAB00BEC813 /* lto.c in Sources */,
+				759CDCF414A48FAB00BEC813 /* macosx_deployment_target.c in Sources */,
+				759CDCF514A48FAB00BEC813 /* ofile.c in Sources */,
+				759CDCF614A48FAB00BEC813 /* ofile_error.c in Sources */,
+				759CDCF714A48FAB00BEC813 /* ofile_get_word.c in Sources */,
+				759CDCF814A48FAB00BEC813 /* print.c in Sources */,
+				759CDCF914A48FAB00BEC813 /* reloc.c in Sources */,
+				759CDCFA14A48FAB00BEC813 /* round.c in Sources */,
+				759CDCFB14A48FAB00BEC813 /* set_arch_flag_name.c in Sources */,
+				759CDCFC14A48FAB00BEC813 /* swap_headers.c in Sources */,
+				759CDCFD14A48FAB00BEC813 /* symbol_list.c in Sources */,
+				759CDCFE14A48FAB00BEC813 /* unix_standard_mode.c in Sources */,
+				759CDCFF14A48FAB00BEC813 /* version_number.c in Sources */,
+				759CDD0014A48FAB00BEC813 /* vm_flush_cache.c in Sources */,
+				759CDD0114A48FAB00BEC813 /* writeout.c in Sources */,
 				8D576312048677EA00EA77CD /* main.c in Sources */,
 				2C05A19C06CAA52B00D84F6F /* extract.m in Sources */,
 				7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */,
@@ -543,19 +535,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		75189DFF121143CE000ACAD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cctools.static;
-			targetProxy = 75189DFE121143CE000ACAD3 /* PBXContainerItemProxy */;
-		};
-		75AF22F112009719003F2B8F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cctools.static;
-			targetProxy = 75AF22F012009719003F2B8F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D5B49A704867FD3000E48DA /* InfoPlist.strings */ = {
@@ -581,10 +560,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Release\"",
-				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -594,17 +569,17 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/cctools/include",
+					"$(SRCROOT)/cctools/cbtlib",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = $HOME/Library/Spotlight;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"/Volumes/leopard/Sources/Darwin/cctools-750/cctools/build/Debug\"",
-				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
+				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -619,14 +594,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-					/tmp/MOKit.sym/Deployment,
-					"\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Release\"",
-				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -634,18 +601,17 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/cctools/include",
+					"$(SRCROOT)/cctools/cbtlib",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = $HOME/Library/Spotlight;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"/Volumes/leopard/Sources/Darwin/cctools-750/cctools/build/Debug\"",
-				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
+				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -656,50 +622,13 @@
 			};
 			name = Deployment;
 		};
-		634C98C808E80093002B8C46 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-					/tmp/MOKit.sym/Deployment,
-					"\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Release\"",
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = $HOME/Library/Spotlight;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"/Volumes/leopard/Sources/Darwin/cctools-750/cctools/build/Debug\"",
-				);
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
-				PRODUCT_NAME = SymbolSpotlighter;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = mdimporter;
-			};
-			name = Default;
-		};
 		634C98CA08E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -710,15 +639,16 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
 			};
 			name = Development;
 		};
 		634C98CB08E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -727,24 +657,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
 				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
 			};
 			name = Deployment;
-		};
-		634C98CC08E80093002B8C46 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_WARN_MISSING_PARENTHESES = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "~/Sources/Darwin/cctools/include";
-			};
-			name = Default;
 		};
 		751931D811F7BAFE0038715F /* Development */ = {
 			isa = XCBuildConfiguration;
@@ -796,40 +710,19 @@
 			};
 			name = Deployment;
 		};
-		751931DA11F7BAFE0038715F /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/tmp/MOKit.sym/Deployment,
-					"\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Release\"",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /usr/local/bin;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../SDK/MoreIsBetter/MIB-Libraries/build/Development\"";
-				PREBINDING = NO;
-				PRODUCT_NAME = testlib;
-			};
-			name = Default;
-		};
 		7591D6FA120DFFBE004DC52F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
 			};
 			name = Debug;
 		};
 		7591D6FB120DFFBE004DC52F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
 			};
 			name = Release;
 		};
@@ -865,18 +758,6 @@
 			};
 			name = Deployment;
 		};
-		759EFB691200B5EC009F6F92 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /usr/local/bin;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				PRODUCT_NAME = TestLibTools;
-			};
-			name = Default;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -885,42 +766,38 @@
 			buildConfigurations = (
 				634C98C608E80093002B8C46 /* Development */,
 				634C98C708E80093002B8C46 /* Deployment */,
-				634C98C808E80093002B8C46 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 		634C98C908E80093002B8C46 /* Build configuration list for PBXProject "SymbolSpotlighter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				634C98CA08E80093002B8C46 /* Development */,
 				634C98CB08E80093002B8C46 /* Deployment */,
-				634C98CC08E80093002B8C46 /* Default */,
 				7591D6FA120DFFBE004DC52F /* Debug */,
 				7591D6FB120DFFBE004DC52F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 		751931DB11F7BB1C0038715F /* Build configuration list for PBXNativeTarget "Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				751931D811F7BAFE0038715F /* Development */,
 				751931D911F7BAFE0038715F /* Deployment */,
-				751931DA11F7BAFE0038715F /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 		759EFB6B1200B621009F6F92 /* Build configuration list for PBXNativeTarget "TestLibTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				759EFB671200B5EC009F6F92 /* Development */,
 				759EFB681200B5EC009F6F92 /* Deployment */,
-				759EFB691200B5EC009F6F92 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
