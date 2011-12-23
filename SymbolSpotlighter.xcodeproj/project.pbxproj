@@ -15,8 +15,9 @@
 		751958CC11F7D7FC0038715F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
 		756110D711F8C305007A0C78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; };
 		7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
-		7592A91611FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
-		7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
+		7592A91611FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
+		7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
+		7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593B1CE14A4B2B400034C96 /* CoreData.framework */; };
 		759CDCE214A48FAB00BEC813 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
 		759CDCE314A48FAB00BEC813 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6F1200B659009F6F92 /* arch.c */; };
 		759CDCE414A48FAB00BEC813 /* arch_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB701200B659009F6F92 /* arch_usage.c */; };
@@ -83,7 +84,7 @@
 		759EFBAD1200B659009F6F92 /* writeout.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB8D1200B659009F6F92 /* writeout.c */; };
 		759EFBB21200BF93009F6F92 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; };
 		759EFBB51200BFA9009F6F92 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
-		759EFBF11200BFED009F6F92 /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */; };
+		759EFBF11200BFED009F6F92 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
 		759EFBF21200BFF3009F6F92 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		759EFBF31200BFF7009F6F92 /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
 		759EFBFB1200C012009F6F92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509C11211FE0DEB003FDB3F /* AppKit.framework */; };
@@ -120,7 +121,8 @@
 		7509C11211FE0DEB003FDB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetMetadataForFile.c; sourceTree = "<group>"; };
+		7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		7593B1CE14A4B2B400034C96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		759EFB651200B5EC009F6F92 /* TestLibTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLibTools; sourceTree = BUILT_PRODUCTS_DIR; };
 		759EFB6E1200B659009F6F92 /* allocate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocate.c; sourceTree = "<group>"; };
 		759EFB6F1200B659009F6F92 /* arch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arch.c; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */,
 				75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */,
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
@@ -214,6 +217,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7593B1CE14A4B2B400034C96 /* CoreData.framework */,
 				7509C11211FE0DEB003FDB3F /* AppKit.framework */,
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
@@ -246,7 +250,7 @@
 		756111C511F8C5A1007A0C78 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7592A91511FCEF0A00923E3D /* GetMetadataForFile.c */,
+				7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */,
 				75E98A4111FB81A500C931AD /* test.h */,
 				75E98A4211FB81A500C931AD /* test.m */,
 				75E98AD611FB880C00C931AD /* extract.h */,
@@ -378,6 +382,9 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 634C98C908E80093002B8C46 /* Build configuration list for PBXProject "SymbolSpotlighter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -443,7 +450,7 @@
 				756110D711F8C305007A0C78 /* main.c in Sources */,
 				75E98A4311FB81A500C931AD /* test.m in Sources */,
 				75E98AC211FB872A00C931AD /* extract.m in Sources */,
-				7592A91611FCEF0A00923E3D /* GetMetadataForFile.c in Sources */,
+				7592A91611FCEF0A00923E3D /* GetMetadataForFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +460,7 @@
 			files = (
 				759EFBF31200BFF7009F6F92 /* extract.m in Sources */,
 				759EFBF21200BFF3009F6F92 /* test.m in Sources */,
-				759EFBF11200BFED009F6F92 /* GetMetadataForFile.c in Sources */,
+				759EFBF11200BFED009F6F92 /* GetMetadataForFile.m in Sources */,
 				759EFBB21200BF93009F6F92 /* main.c in Sources */,
 				759EFB8E1200B659009F6F92 /* allocate.c in Sources */,
 				759EFB8F1200B659009F6F92 /* arch.c in Sources */,
@@ -529,7 +536,7 @@
 				759CDD0114A48FAB00BEC813 /* writeout.c in Sources */,
 				8D576312048677EA00EA77CD /* main.c in Sources */,
 				2C05A19C06CAA52B00D84F6F /* extract.m in Sources */,
-				7592A91711FCEF0A00923E3D /* GetMetadataForFile.c in Sources */,
+				7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */,
 				750816C212113A4F00B80047 /* pms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,7 +568,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -577,7 +583,6 @@
 				INSTALL_PATH = $HOME/Library/Spotlight;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
 				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
@@ -594,7 +599,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -609,7 +613,6 @@
 				INSTALL_PATH = $HOME/Library/Spotlight;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = SymbolSpotlighter;
 				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
@@ -630,7 +633,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
 				GCC_DEBUGGING_SYMBOLS = full;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -649,7 +651,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
@@ -678,7 +679,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
 			};
 			name = Development;
@@ -696,7 +696,6 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Darwin/cctools/cctools/build/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../Darwin/cctools-750/cctools/build/Debug\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../Darwin/cctools-750/LibTools/build/Release\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
@@ -704,7 +703,6 @@
 					"\"$(SRCROOT)\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../SDK/MoreIsBetter/MIB-Libraries/build/Development\"";
-				PREBINDING = NO;
 				PRODUCT_NAME = testlib;
 				ZERO_LINK = NO;
 			};
@@ -732,13 +730,11 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DEBUGGING_SYMBOLS = used;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = TestLibTools;
 			};
 			name = Development;
@@ -748,11 +744,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = TestLibTools;
 				ZERO_LINK = NO;
 			};
