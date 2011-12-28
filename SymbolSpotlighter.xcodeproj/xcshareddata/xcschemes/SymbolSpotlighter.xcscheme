@@ -64,11 +64,11 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-g /Sources/Projects/Cocoa/SymbolFinder/build/Development/SymbolSpotlighter.mdimporter "
+            argument = "-g /Sources/Projects/Spotlights/SymbolFinder/build/Development/SymbolSpotlighter.mdimporter "
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Sources/Projects/Cocoa/SymbolFinder/test.o"
+            argument = "/Sources/Projects/Spotlights/SymbolFinder/test.o"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
