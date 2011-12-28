@@ -45,7 +45,7 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h> 
 #import <CoreData/CoreData.h>
-
+#import "extract.h"
 
 /* -----------------------------------------------------------------------------
    Step 1
@@ -101,6 +101,6 @@ Boolean GetMetadataForFile(void* thisInterface,
 			   CFStringRef pathToFile)
 {
     @autoreleasepool {
-        return extract_object_file((struct NSString *)pathToFile, (struct NSMutableDictionary *)attributes);
+        return extract_object_file(thisInterface, attributes, contentTypeUTI, pathToFile);
     }
 }
