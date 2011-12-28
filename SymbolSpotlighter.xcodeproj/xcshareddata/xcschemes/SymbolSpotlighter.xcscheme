@@ -68,7 +68,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Sources/Projects/Spotlights/SymbolFinder/test.o"
+            argument = "/Sources/SDKs/MacOSX10.3.9.sdk/usr/X11R6/lib/libX11.a"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

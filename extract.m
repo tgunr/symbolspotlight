@@ -117,7 +117,9 @@ Boolean extract_object_file(void* thisInterface,
 						symName = SymInfoGetSymbolName(symbol);
 						symArch = SymInfoGetSymbolArch(symbol);
 						symOrdinal = SymInfoGetSymbolOrdinal(symbol);
-						[exportSymbols addObject:SymInfoAsLine(symbol)];
+                        if (! [exportSymbols containsObject:SymInfoAsLine(symbol)] ) {
+                            [exportSymbols addObject:SymInfoAsLine(symbol)];
+                        }
 					}
 					
 					for(i = 0; i < symInfoImportCount; i++) {
@@ -125,7 +127,9 @@ Boolean extract_object_file(void* thisInterface,
 						symName = SymInfoGetSymbolName(symbol);
 						symArch = SymInfoGetSymbolArch(symbol);
 						symOrdinal = SymInfoGetSymbolOrdinal(symbol);
-						[importSymbols addObject:SymInfoAsLine(symImports[i])];
+                        if (! [importSymbols containsObject:SymInfoAsLine(symbol)] ) {
+                            [importSymbols addObject:SymInfoAsLine(symbol)];
+                        }
 					}
 					
 					deps = SymInfoGetLibraryInfo(nmList);
