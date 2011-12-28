@@ -9,9 +9,9 @@
 	are CFNumber, CFDate, CFBoolean and CFData.		      
     </note>
     <attributes>
-		<attribute name="com_polymicrosystems_objectfile_path" multivalued="false" type="CFString"/>
-		<attribute name="com_polymicrosystems_objectfile_export_symbols" multivalued="true" type="CFString"/>
-		<attribute name="com_polymicrosystems_objectfile_import_symbols" multivalued="true" type="CFString"/>
+		<attribute name="objectfile_path" multivalued="false" type="CFString"/>
+		<attribute name="objectfile_import_symbols" multivalued="true" type="CFString"/>
+		<attribute name="objectfile_export_symbols" multivalued="true" type="CFString"/>
     </attributes>
 
     <types>
@@ -23,17 +23,17 @@
 				kMDItemTitle
 				kMDItemDisplayName
 				kMDItemKind
-				com_polymicrosystems_objectfile_path
-				com_polymicrosystems_objectfile_export_symbols
-				com_polymicrosystems_objectfile_import_symbols
+				objectfile_path
+				objectfile_import_symbols
+				objectfile_export_symbols
             </allattrs>
             <displayattrs>
 				kMDItemTitle
 				kMDItemDisplayName
 				kMDItemKind
-				com_polymicrosystems_objectfile_path
-				com_polymicrosystems_objectfile_export_symbols
-				com_polymicrosystems_objectfile_import_symbols
+				objectfile_path
+				objectfile_import_symbols
+				objectfile_export_symbols
             </displayattrs>
         </type>
     </types>

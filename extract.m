@@ -144,9 +144,9 @@ Boolean extract_object_file(void* thisInterface,
 						subUmbrella = subUmbrellas[i];
 					}
 					
-					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"com_polymicrosystems_objectfile_path"];
-					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"com_polymicrosystems_objectfile_export_symbols"];
-					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"com_polymicrosystems_objectfile_import_symbols"];
+					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"objectfile_path"];
+					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"objectfile_import_symbols"];
+					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
 					
 					NSArray *treeArray = [(NSMutableDictionary *)attributes objectForKey: (NSString *)kMDItemContentTypeTree];
