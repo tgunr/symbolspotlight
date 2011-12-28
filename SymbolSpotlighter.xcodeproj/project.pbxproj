@@ -438,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "#if [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\nrm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\nmv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#fi\n";
+			shellScript = "echo \"mdimport -d2 -g ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\nif [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\n    rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\n    mv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
