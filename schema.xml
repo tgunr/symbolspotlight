@@ -20,17 +20,11 @@
 				The keys that this metadata importer handles.
             </note>
             <allattrs>
-				kMDItemTitle
-				kMDItemDisplayName
-				kMDItemKind
 				objectfile_path
 				objectfile_import_symbols
 				objectfile_export_symbols
             </allattrs>
             <displayattrs>
-				kMDItemTitle
-				kMDItemDisplayName
-				kMDItemKind
 				objectfile_path
 				objectfile_import_symbols
 				objectfile_export_symbols
