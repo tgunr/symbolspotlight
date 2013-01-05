@@ -11,6 +11,7 @@
 			<array>
 				<string>a</string>
 				<string>o</string>
+				<string>dylib</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>Object File</string>
@@ -21,7 +22,6 @@
 				<string>com.apple.mach-o-dylib</string>
 				<string>public.object-file</string>
 				<string>public.object-code</string>
-				<string>public.data</string>
 				<string>dyn.ah62d4rv4ge80c</string>
 			</array>
 		</dict>
@@ -37,7 +37,7 @@
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>

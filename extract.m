@@ -3,7 +3,7 @@
 #include <Foundation/Foundation.h>
 #include <stdio.h>
 #include <syslog.h>
-#import <CCTools/libsyminfo.h>
+#import <libsyminfo.h>
 #import "extract.h"
 #import "pms.h"
 
@@ -55,7 +55,7 @@ SymInfoPrintSymbol(SymInfoSymbol symbol)
 	    PMLOG(1, @"Null symbol, not doing a thing\n");
 	    return;
 	}
-	NSLog(@"SymbolSpotlighter: symbol name: %s arch: %s ordinal: %s\n", SymInfoGetSymbolName(symbol), SymInfoGetSymbolArch(symbol), SymInfoGetSymbolOrdinal(symbol));
+	NSLog(@"SymbolSpotlight: symbol name: %s arch: %s ordinal: %s\n", SymInfoGetSymbolName(symbol), SymInfoGetSymbolArch(symbol), SymInfoGetSymbolOrdinal(symbol));
 }
 
 
@@ -90,10 +90,11 @@ Boolean extract_object_file(void* thisInterface,
     SymInfoSymbol symbol;
     SymInfoDependencies deps;
 	
+    NSLog(@"SymbolSpotlight called for: %@", pathToFile);
     if (CFStringHasSuffix(pathToFile, (CFStringRef)@".o") || 
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".a") ||
 		CFStringHasSuffix(pathToFile, (CFStringRef)@".dylib") ) {
-		NSLog(@"SymbolSpotlighter: %@", pathToFile);
+		NSLog(@"SymbolSpotlight processing: %@", pathToFile);
 		if (CFStringGetCString(pathToFile, path, 4096, kCFStringEncodingUTF8)) {
 			fh = fopen(path, "r");
 			if (fh) {
@@ -151,56 +152,7 @@ Boolean extract_object_file(void* thisInterface,
 					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"objectfile_path"];
 					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"objectfile_import_symbols"];
-					[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
-					
-					NSArray *treeArray = [(NSMutableDictionary *)attributes objectForKey: (NSString *)kMDItemContentTypeTree];
-					if (treeArray) {
-						NSMutableArray * mdItemContentTypeTree = [[NSMutableArray alloc ] initWithArray: treeArray copyItems:TRUE];
-						[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
-						[mdItemContentTypeTree addObject: kPublicObjectFileString];
-						if (mdItemContentTypeTree) {
-							NSString * aString = [NSString string];
-							NSMutableArray * foundIndexes = [NSMutableArray arrayWithCapacity: 2];
-							NSUInteger foundCount = 0;
-							NSEnumerator *enumerator = [mdItemContentTypeTree objectEnumerator];
-							int count = 0;
-							while ((aString = (NSString *)[enumerator nextObject])) {
-								if ([aString isEqualToString:kPublicObjectFileString]) {
-									foundCount++;
-									[foundIndexes addObject: [NSNumber numberWithInteger: count]];
-								}
-								count++;
-							}						
 
-							// Should only be 1 kPublicObjectFileString
-							PMLOG(2, @"foundcount: %d", foundCount);
-							switch (foundCount) {
-								case 0:
-									[mdItemContentTypeTree insertObject: kPublicObjectFileString atIndex: 0];
-									break;
-								case 1:
-									break;
-								default:
-									if (foundCount > 1) {
-										if ([foundIndexes count] > 1) {
-											NSMutableIndexSet * itemsToRemove = [[NSMutableIndexSet alloc] init];
-											for(i = 1; i < [foundIndexes count]; i++) {
-												[itemsToRemove addIndex: [[foundIndexes objectAtIndex:i] integerValue]];
-											}
-											[mdItemContentTypeTree removeObjectsAtIndexes: itemsToRemove];
-										}
-									}
-									break;
-							}
-						} else{
-							NSArray *contentTree = [NSArray arrayWithObjects:kPublicObjectFileString, @"public.object-code", @"public.data",
-													@"public.item", nil];
-							mdItemContentTypeTree = [NSMutableArray arrayWithArray:contentTree];
-						}
-						[(NSMutableDictionary *)attributes setObject:mdItemContentTypeTree forKey: (NSString *)kMDItemContentTypeTree];
-						[(NSMutableDictionary *)attributes setObject:kPublicObjectFileString forKey: (NSString *)kMDItemContentType];
-					}
-                    
 					SymInfoFree(nmList);
 					[exportSymbols release];
 					[importSymbols release];

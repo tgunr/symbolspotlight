@@ -18,6 +18,8 @@
 		7592A91611FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
 		7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
 		7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593B1CE14A4B2B400034C96 /* CoreData.framework */; };
+		759C038B1698BCAF0064299C /* rnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 759C03891698BCAF0064299C /* rnd.c */; };
+		759C038C1698BCAF0064299C /* rnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 759C038A1698BCAF0064299C /* rnd.h */; };
 		759CDCE214A48FAB00BEC813 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
 		759CDCE314A48FAB00BEC813 /* arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6F1200B659009F6F92 /* arch.c */; };
 		759CDCE414A48FAB00BEC813 /* arch_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB701200B659009F6F92 /* arch_usage.c */; };
@@ -42,7 +44,6 @@
 		759CDCF714A48FAB00BEC813 /* ofile_get_word.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB831200B659009F6F92 /* ofile_get_word.c */; };
 		759CDCF814A48FAB00BEC813 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB841200B659009F6F92 /* print.c */; };
 		759CDCF914A48FAB00BEC813 /* reloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB851200B659009F6F92 /* reloc.c */; };
-		759CDCFA14A48FAB00BEC813 /* round.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB861200B659009F6F92 /* round.c */; };
 		759CDCFB14A48FAB00BEC813 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB871200B659009F6F92 /* set_arch_flag_name.c */; };
 		759CDCFC14A48FAB00BEC813 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB881200B659009F6F92 /* swap_headers.c */; };
 		759CDCFD14A48FAB00BEC813 /* symbol_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB891200B659009F6F92 /* symbol_list.c */; };
@@ -74,7 +75,6 @@
 		759EFBA31200B659009F6F92 /* ofile_get_word.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB831200B659009F6F92 /* ofile_get_word.c */; };
 		759EFBA41200B659009F6F92 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB841200B659009F6F92 /* print.c */; };
 		759EFBA51200B659009F6F92 /* reloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB851200B659009F6F92 /* reloc.c */; };
-		759EFBA61200B659009F6F92 /* round.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB861200B659009F6F92 /* round.c */; };
 		759EFBA71200B659009F6F92 /* set_arch_flag_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB871200B659009F6F92 /* set_arch_flag_name.c */; };
 		759EFBA81200B659009F6F92 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB881200B659009F6F92 /* swap_headers.c */; };
 		759EFBA91200B659009F6F92 /* symbol_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB891200B659009F6F92 /* symbol_list.c */; };
@@ -123,6 +123,8 @@
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		7593B1CE14A4B2B400034C96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		759C03891698BCAF0064299C /* rnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rnd.c; sourceTree = "<group>"; };
+		759C038A1698BCAF0064299C /* rnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rnd.h; sourceTree = "<group>"; };
 		759EFB651200B5EC009F6F92 /* TestLibTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLibTools; sourceTree = BUILT_PRODUCTS_DIR; };
 		759EFB6E1200B659009F6F92 /* allocate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocate.c; sourceTree = "<group>"; };
 		759EFB6F1200B659009F6F92 /* arch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arch.c; sourceTree = "<group>"; };
@@ -148,7 +150,6 @@
 		759EFB831200B659009F6F92 /* ofile_get_word.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofile_get_word.c; sourceTree = "<group>"; };
 		759EFB841200B659009F6F92 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		759EFB851200B659009F6F92 /* reloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reloc.c; sourceTree = "<group>"; };
-		759EFB861200B659009F6F92 /* round.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = round.c; sourceTree = "<group>"; };
 		759EFB871200B659009F6F92 /* set_arch_flag_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set_arch_flag_name.c; sourceTree = "<group>"; };
 		759EFB881200B659009F6F92 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap_headers.c; sourceTree = "<group>"; };
 		759EFB891200B659009F6F92 /* symbol_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = symbol_list.c; sourceTree = "<group>"; };
@@ -297,7 +298,8 @@
 				759EFB831200B659009F6F92 /* ofile_get_word.c */,
 				759EFB841200B659009F6F92 /* print.c */,
 				759EFB851200B659009F6F92 /* reloc.c */,
-				759EFB861200B659009F6F92 /* round.c */,
+				759C03891698BCAF0064299C /* rnd.c */,
+				759C038A1698BCAF0064299C /* rnd.h */,
 				759EFB871200B659009F6F92 /* set_arch_flag_name.c */,
 				759EFB881200B659009F6F92 /* swap_headers.c */,
 				759EFB891200B659009F6F92 /* symbol_list.c */,
@@ -317,6 +319,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759C038C1698BCAF0064299C /* rnd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +441,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "mdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\nif [[ \"$CONFIGURATION\" == \"Deployment\" ]] ; then\n    rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\n    mv $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\nfi\n";
+			shellScript = "rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\ncp -r $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\nmdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\nmdimport -r $INSTALL_PATH/$TARGET_NAME.mdimporter\n\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -486,7 +490,6 @@
 				759EFBA31200B659009F6F92 /* ofile_get_word.c in Sources */,
 				759EFBA41200B659009F6F92 /* print.c in Sources */,
 				759EFBA51200B659009F6F92 /* reloc.c in Sources */,
-				759EFBA61200B659009F6F92 /* round.c in Sources */,
 				759EFBA71200B659009F6F92 /* set_arch_flag_name.c in Sources */,
 				759EFBA81200B659009F6F92 /* swap_headers.c in Sources */,
 				759EFBA91200B659009F6F92 /* symbol_list.c in Sources */,
@@ -526,7 +529,6 @@
 				759CDCF714A48FAB00BEC813 /* ofile_get_word.c in Sources */,
 				759CDCF814A48FAB00BEC813 /* print.c in Sources */,
 				759CDCF914A48FAB00BEC813 /* reloc.c in Sources */,
-				759CDCFA14A48FAB00BEC813 /* round.c in Sources */,
 				759CDCFB14A48FAB00BEC813 /* set_arch_flag_name.c in Sources */,
 				759CDCFC14A48FAB00BEC813 /* swap_headers.c in Sources */,
 				759CDCFD14A48FAB00BEC813 /* symbol_list.c in Sources */,
@@ -538,6 +540,7 @@
 				2C05A19C06CAA52B00D84F6F /* extract.m in Sources */,
 				7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */,
 				750816C212113A4F00B80047 /* pms.m in Sources */,
+				759C038B1698BCAF0064299C /* rnd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,25 +569,15 @@
 		634C98C608E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/cctools/include",
-					"$(SRCROOT)/cctools/cbtlib",
-				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = $HOME/Library/Spotlight;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SymbolSpotlight;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -598,23 +591,15 @@
 		634C98C708E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/cctools/include",
-					"$(SRCROOT)/cctools/cbtlib",
-				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = $HOME/Library/Spotlight;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SymbolSpotlight;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -628,36 +613,33 @@
 		634C98CA08E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
-				GCC_DEBUGGING_SYMBOLS = full;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/cctools/include\"/**",
+					"\"$(SRCROOT)/cctools/include/cbt\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.7;
 			};
 			name = Development;
 		};
 		634C98CB08E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = "";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/cctools/include\"/**",
+					"\"$(SRCROOT)/cctools/include/cbt\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.7;
 			};
 			name = Deployment;
 		};
@@ -711,16 +693,26 @@
 		7591D6FA120DFFBE004DC52F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/cctools/include\"/**",
+					"\"$(SRCROOT)/cctools/include/cbt\"",
+				);
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		7591D6FB120DFFBE004DC52F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/cctools/build/$(CONFIGURATION)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/cctools/include\"/**",
+					"\"$(SRCROOT)/cctools/include/cbt\"",
+				);
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
