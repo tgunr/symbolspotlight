@@ -152,6 +152,8 @@ Boolean extract_object_file(void* thisInterface,
 					[(NSMutableDictionary *)attributes setObject:(NSString *) pathToFile forKey:@"objectfile_path"];
 					[(NSMutableDictionary *)attributes setObject:exportSymbols forKey:@"objectfile_export_symbols"];
 					[(NSMutableDictionary *)attributes setObject:importSymbols forKey:@"objectfile_import_symbols"];
+                    NSString *changedDate = [[NSDate date] description];
+                    [(NSMutableDictionary *)attributes setObject:changedDate forKey:kMDItemAttributeChangeDate];
 
 					SymInfoFree(nmList);
 					[exportSymbols release];
