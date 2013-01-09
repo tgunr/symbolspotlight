@@ -61,12 +61,20 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-d2"
+            argument = "-d1"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-r &quot;$HOME&quot;/Library/Spotlight/SymbolSpotlight.mdimporter"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "-d2"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-g /Sources/Projects/Spotlights/SymbolFinder/build/Development/SymbolSpotlighter.mdimporter "
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Sources/SDKs/MacOSX10.3.9.sdk/usr/X11R6/lib/libX11.a"
@@ -74,7 +82,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "${SRCROOT}/test.o"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
