@@ -17,7 +17,6 @@
 		7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
 		7592A91611FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
 		7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
-		7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593B1CE14A4B2B400034C96 /* CoreData.framework */; };
 		759C038B1698BCAF0064299C /* rnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 759C03891698BCAF0064299C /* rnd.c */; };
 		759C038C1698BCAF0064299C /* rnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 759C038A1698BCAF0064299C /* rnd.h */; };
 		759CDCE214A48FAB00BEC813 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
@@ -122,7 +121,6 @@
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		7593B1CE14A4B2B400034C96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		759C03891698BCAF0064299C /* rnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rnd.c; sourceTree = "<group>"; };
 		759C038A1698BCAF0064299C /* rnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rnd.h; sourceTree = "<group>"; };
 		759EFB651200B5EC009F6F92 /* TestLibTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLibTools; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +190,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */,
 				75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */,
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
@@ -218,7 +215,6 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				7593B1CE14A4B2B400034C96 /* CoreData.framework */,
 				7509C11211FE0DEB003FDB3F /* AppKit.framework */,
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
