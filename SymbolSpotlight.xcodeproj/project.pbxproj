@@ -17,7 +17,6 @@
 		7561111211F8C408007A0C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
 		7592A91611FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
 		7592A91711FCEF0A00923E3D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */; };
-		7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593B1CE14A4B2B400034C96 /* CoreData.framework */; };
 		759C038B1698BCAF0064299C /* rnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 759C03891698BCAF0064299C /* rnd.c */; };
 		759C038C1698BCAF0064299C /* rnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 759C038A1698BCAF0064299C /* rnd.h */; };
 		759CDCE214A48FAB00BEC813 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB6E1200B659009F6F92 /* allocate.c */; };
@@ -36,7 +35,6 @@
 		759CDCEF14A48FAB00BEC813 /* get_toc_byte_sex.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7B1200B659009F6F92 /* get_toc_byte_sex.c */; };
 		759CDCF014A48FAB00BEC813 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7C1200B659009F6F92 /* guess_short_name.c */; };
 		759CDCF114A48FAB00BEC813 /* hash_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7D1200B659009F6F92 /* hash_string.c */; };
-		759CDCF214A48FAB00BEC813 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7E1200B659009F6F92 /* libsyminfo.c */; };
 		759CDCF314A48FAB00BEC813 /* lto.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7F1200B659009F6F92 /* lto.c */; };
 		759CDCF414A48FAB00BEC813 /* macosx_deployment_target.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB801200B659009F6F92 /* macosx_deployment_target.c */; };
 		759CDCF514A48FAB00BEC813 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB811200B659009F6F92 /* ofile.c */; };
@@ -67,7 +65,6 @@
 		759EFB9B1200B659009F6F92 /* get_toc_byte_sex.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7B1200B659009F6F92 /* get_toc_byte_sex.c */; };
 		759EFB9C1200B659009F6F92 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7C1200B659009F6F92 /* guess_short_name.c */; };
 		759EFB9D1200B659009F6F92 /* hash_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7D1200B659009F6F92 /* hash_string.c */; };
-		759EFB9E1200B659009F6F92 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7E1200B659009F6F92 /* libsyminfo.c */; };
 		759EFB9F1200B659009F6F92 /* lto.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB7F1200B659009F6F92 /* lto.c */; };
 		759EFBA01200B659009F6F92 /* macosx_deployment_target.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB801200B659009F6F92 /* macosx_deployment_target.c */; };
 		759EFBA11200B659009F6F92 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 759EFB811200B659009F6F92 /* ofile.c */; };
@@ -88,6 +85,7 @@
 		759EFBF21200BFF3009F6F92 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		759EFBF31200BFF7009F6F92 /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
 		759EFBFB1200C012009F6F92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7509C11211FE0DEB003FDB3F /* AppKit.framework */; };
+		75E340161BDC3EDC002AF9F4 /* libsyminfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E340151BDC3EDC002AF9F4 /* libsyminfo.c */; };
 		75E98A4311FB81A500C931AD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E98A4211FB81A500C931AD /* test.m */; };
 		75E98AC211FB872A00C931AD /* extract.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* extract.m */; };
 		75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561111111F8C408007A0C78 /* Foundation.framework */; };
@@ -122,7 +120,6 @@
 		751931D611F7BAFD0038715F /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
 		7561111111F8C408007A0C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7592A91511FCEF0A00923E3D /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		7593B1CE14A4B2B400034C96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		759C03891698BCAF0064299C /* rnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rnd.c; sourceTree = "<group>"; };
 		759C038A1698BCAF0064299C /* rnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rnd.h; sourceTree = "<group>"; };
 		759EFB651200B5EC009F6F92 /* TestLibTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLibTools; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +139,6 @@
 		759EFB7B1200B659009F6F92 /* get_toc_byte_sex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = get_toc_byte_sex.c; sourceTree = "<group>"; };
 		759EFB7C1200B659009F6F92 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess_short_name.c; sourceTree = "<group>"; };
 		759EFB7D1200B659009F6F92 /* hash_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash_string.c; sourceTree = "<group>"; };
-		759EFB7E1200B659009F6F92 /* libsyminfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libsyminfo.c; path = ../cbtlibs/libsyminfo.c; sourceTree = "<group>"; };
 		759EFB7F1200B659009F6F92 /* lto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lto.c; sourceTree = "<group>"; };
 		759EFB801200B659009F6F92 /* macosx_deployment_target.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = macosx_deployment_target.c; sourceTree = "<group>"; };
 		759EFB811200B659009F6F92 /* ofile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofile.c; sourceTree = "<group>"; };
@@ -157,10 +153,11 @@
 		759EFB8B1200B659009F6F92 /* version_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version_number.c; sourceTree = "<group>"; };
 		759EFB8C1200B659009F6F92 /* vm_flush_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_flush_cache.c; sourceTree = "<group>"; };
 		759EFB8D1200B659009F6F92 /* writeout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writeout.c; sourceTree = "<group>"; };
+		75E340151BDC3EDC002AF9F4 /* libsyminfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libsyminfo.c; path = ../cbtlibs/libsyminfo.c; sourceTree = "<group>"; };
 		75E98A4111FB81A500C931AD /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = test.h; sourceTree = "<group>"; };
 		75E98A4211FB81A500C931AD /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = test.m; sourceTree = "<group>"; };
 		75E98AD611FB880C00C931AD /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = extract.h; sourceTree = "<group>"; };
-		8D576316048677EA00EA77CD /* SymbolSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SymbolSpotlight.mdimporter; path = LibSpotlight.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576316048677EA00EA77CD /* SymbolSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymbolSpotlight.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		C88FB7D7067446EC006EBB30 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
@@ -192,7 +189,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7593B1CF14A4B2B400034C96 /* CoreData.framework in Frameworks */,
 				75E98FBD11FCC10F00C931AD /* Foundation.framework in Frameworks */,
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
@@ -218,7 +214,6 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				7593B1CE14A4B2B400034C96 /* CoreData.framework */,
 				7509C11211FE0DEB003FDB3F /* AppKit.framework */,
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
@@ -274,6 +269,7 @@
 		759EFB6D1200B637009F6F92 /* libstuff */ = {
 			isa = PBXGroup;
 			children = (
+				75E340151BDC3EDC002AF9F4 /* libsyminfo.c */,
 				759EFB6E1200B659009F6F92 /* allocate.c */,
 				759EFB6F1200B659009F6F92 /* arch.c */,
 				759EFB701200B659009F6F92 /* arch_usage.c */,
@@ -290,7 +286,6 @@
 				759EFB7B1200B659009F6F92 /* get_toc_byte_sex.c */,
 				759EFB7C1200B659009F6F92 /* guess_short_name.c */,
 				759EFB7D1200B659009F6F92 /* hash_string.c */,
-				759EFB7E1200B659009F6F92 /* libsyminfo.c */,
 				759EFB7F1200B659009F6F92 /* lto.c */,
 				759EFB801200B659009F6F92 /* macosx_deployment_target.c */,
 				759EFB811200B659009F6F92 /* ofile.c */,
@@ -387,7 +382,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 634C98C908E80093002B8C46 /* Build configuration list for PBXProject "SymbolSpotlight" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -441,9 +436,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh -x";
-			shellScript = "rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\ncp -r $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\nmdimport -d1 \"${SRCROOT}/test.o\"\nmdimport -d2 \"${SRCROOT}/test.o\"\nmdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\nmdimport -r $INSTALL_PATH/$TARGET_NAME.mdimporter\n\n";
-			showEnvVarsInLog = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "if [[ ! -e $INSTALL_PATH ]] ; then\n    mkdir $INSTALL_PATH\nfi\nrm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\ncp -r $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#mdimport -d1 \"${SRCROOT}/test.o\"\n#mdimport -d2 \"${SRCROOT}/test.o\"\n#mdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\n#mdimport -r $INSTALL_PATH/$TARGET_NAME.mdimporter\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -483,7 +477,6 @@
 				759EFB9B1200B659009F6F92 /* get_toc_byte_sex.c in Sources */,
 				759EFB9C1200B659009F6F92 /* guess_short_name.c in Sources */,
 				759EFB9D1200B659009F6F92 /* hash_string.c in Sources */,
-				759EFB9E1200B659009F6F92 /* libsyminfo.c in Sources */,
 				759EFB9F1200B659009F6F92 /* lto.c in Sources */,
 				759EFBA01200B659009F6F92 /* macosx_deployment_target.c in Sources */,
 				759EFBA11200B659009F6F92 /* ofile.c in Sources */,
@@ -514,6 +507,7 @@
 				759CDCE814A48FAB00BEC813 /* coff_bytesex.c in Sources */,
 				759CDCE914A48FAB00BEC813 /* crc32.c in Sources */,
 				759CDCEA14A48FAB00BEC813 /* errors.c in Sources */,
+				75E340161BDC3EDC002AF9F4 /* libsyminfo.c in Sources */,
 				759CDCEB14A48FAB00BEC813 /* execute.c in Sources */,
 				759CDCEC14A48FAB00BEC813 /* fatal_arch.c in Sources */,
 				759CDCED14A48FAB00BEC813 /* fatals.c in Sources */,
@@ -521,7 +515,6 @@
 				759CDCEF14A48FAB00BEC813 /* get_toc_byte_sex.c in Sources */,
 				759CDCF014A48FAB00BEC813 /* guess_short_name.c in Sources */,
 				759CDCF114A48FAB00BEC813 /* hash_string.c in Sources */,
-				759CDCF214A48FAB00BEC813 /* libsyminfo.c in Sources */,
 				759CDCF314A48FAB00BEC813 /* lto.c in Sources */,
 				759CDCF414A48FAB00BEC813 /* macosx_deployment_target.c in Sources */,
 				759CDCF514A48FAB00BEC813 /* ofile.c in Sources */,
@@ -569,20 +562,22 @@
 		634C98C608E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Dave Carlton (33TC7NSLLR)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = $HOME/Library/Spotlight;
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = $HOME/Library/Spotlight/;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polymicrosystems.spotlight.objectfile;
 				PRODUCT_NAME = SymbolSpotlight;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Development;
@@ -590,20 +585,22 @@
 		634C98C708E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Dave Carlton (33TC7NSLLR)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = $HOME/Library/Spotlight;
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = $HOME/Library/Spotlight/;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polymicrosystems.spotlight.objectfile;
 				PRODUCT_NAME = SymbolSpotlight;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Deployment;
@@ -611,7 +608,9 @@
 		634C98CA08E80093002B8C46 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_MISSING_PARENTHESES = YES;
@@ -619,8 +618,8 @@
 					"\"$(SRCROOT)/cctools/include\"/**",
 					"\"$(SRCROOT)/cctools/include/cbt\"",
 				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fnested-functions";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Development;
@@ -628,7 +627,8 @@
 		634C98CB08E80093002B8C46 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_WARN_MISSING_PARENTHESES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -636,33 +636,51 @@
 					"\"$(SRCROOT)/cctools/include/cbt\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fnested-functions";
+				OTHER_CFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
-		75182C5E1D8327F3007FE325 /* Debug */ = {
+		750B4FD11BDBE0B2002DBB47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Dave Carlton (33TC7NSLLR)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = $HOME/Library/Spotlight;
-				PRODUCT_NAME = LibSpotlight;
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = $HOME/Library/Spotlight/;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polymicrosystems.spotlight.objectfile;
+				PRODUCT_NAME = SymbolSpotlight;
+				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Debug;
 		};
-		75182C5F1D8327F3007FE325 /* Release */ = {
+		750B4FD21BDBE0B2002DBB47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Dave Carlton (33TC7NSLLR)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				INSTALL_PATH = $HOME/Library/Spotlight;
-				PRODUCT_NAME = LibSpotlight;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = $HOME/Library/Spotlight/;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polymicrosystems.spotlight.objectfile;
+				PRODUCT_NAME = SymbolSpotlight;
+				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Release;
 		};
-		75182C601D8327F3007FE325 /* Debug */ = {
+		750B4FD31BDBE0B2002DBB47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -672,7 +690,7 @@
 			};
 			name = Debug;
 		};
-		75182C611D8327F3007FE325 /* Release */ = {
+		750B4FD41BDBE0B2002DBB47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -681,7 +699,7 @@
 			};
 			name = Release;
 		};
-		75182C621D8327F3007FE325 /* Debug */ = {
+		750B4FD51BDBE0B2002DBB47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -691,7 +709,7 @@
 			};
 			name = Debug;
 		};
-		75182C631D8327F3007FE325 /* Release */ = {
+		750B4FD61BDBE0B2002DBB47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -750,12 +768,15 @@
 		7591D6FA120DFFBE004DC52F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/cctools/include\"/**",
 					"\"$(SRCROOT)/cctools/include/cbt\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -763,7 +784,8 @@
 		7591D6FB120DFFBE004DC52F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/cctools/include\"/**",
@@ -810,8 +832,8 @@
 			buildConfigurations = (
 				634C98C608E80093002B8C46 /* Development */,
 				634C98C708E80093002B8C46 /* Deployment */,
-				75182C5E1D8327F3007FE325 /* Debug */,
-				75182C5F1D8327F3007FE325 /* Release */,
+				750B4FD11BDBE0B2002DBB47 /* Debug */,
+				750B4FD21BDBE0B2002DBB47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -832,8 +854,8 @@
 			buildConfigurations = (
 				751931D811F7BAFE0038715F /* Development */,
 				751931D911F7BAFE0038715F /* Deployment */,
-				75182C601D8327F3007FE325 /* Debug */,
-				75182C611D8327F3007FE325 /* Release */,
+				750B4FD31BDBE0B2002DBB47 /* Debug */,
+				750B4FD41BDBE0B2002DBB47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -843,8 +865,8 @@
 			buildConfigurations = (
 				759EFB671200B5EC009F6F92 /* Development */,
 				759EFB681200B5EC009F6F92 /* Deployment */,
-				75182C621D8327F3007FE325 /* Debug */,
-				75182C631D8327F3007FE325 /* Release */,
+				750B4FD51BDBE0B2002DBB47 /* Debug */,
+				750B4FD61BDBE0B2002DBB47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
