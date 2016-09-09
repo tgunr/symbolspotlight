@@ -160,7 +160,7 @@
 		75E98A4111FB81A500C931AD /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = test.h; sourceTree = "<group>"; };
 		75E98A4211FB81A500C931AD /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = test.m; sourceTree = "<group>"; };
 		75E98AD611FB880C00C931AD /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = extract.h; sourceTree = "<group>"; };
-		8D576316048677EA00EA77CD /* SymbolSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymbolSpotlight.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576316048677EA00EA77CD /* SymbolSpotlight.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SymbolSpotlight.mdimporter; path = LibSpotlight.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		C88FB7D7067446EC006EBB30 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
@@ -442,7 +442,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\ncp -r $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\n#mdimport -d1 \"${SRCROOT}/test.o\"\n#mdimport -d2 \"${SRCROOT}/test.o\"\n#mdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\n#mdimport -r $INSTALL_PATH/$TARGET_NAME.mdimporter\n\n";
+			shellScript = "rm -fr $INSTALL_PATH/$TARGET_NAME.mdimporter\ncp -r $TARGET_BUILD_DIR/$TARGET_NAME.mdimporter  $INSTALL_PATH/\nmdimport -d1 \"${SRCROOT}/test.o\"\nmdimport -d2 \"${SRCROOT}/test.o\"\nmdimport -d2 -g \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/test.o\"\nmdimport -r $INSTALL_PATH/$TARGET_NAME.mdimporter\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -577,7 +577,6 @@
 				INSTALL_PATH = $HOME/Library/Spotlight;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SymbolSpotlight;
-				SDKROOT = macosx10.7;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -599,7 +598,6 @@
 				INSTALL_PATH = $HOME/Library/Spotlight;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SymbolSpotlight;
-				SDKROOT = macosx10.7;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -623,7 +621,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -639,9 +637,68 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fnested-functions";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
+		};
+		75182C5E1D8327F3007FE325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = $HOME/Library/Spotlight;
+				PRODUCT_NAME = LibSpotlight;
+			};
+			name = Debug;
+		};
+		75182C5F1D8327F3007FE325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INSTALL_PATH = $HOME/Library/Spotlight;
+				PRODUCT_NAME = LibSpotlight;
+			};
+			name = Release;
+		};
+		75182C601D8327F3007FE325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = testlib;
+			};
+			name = Debug;
+		};
+		75182C611D8327F3007FE325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = testlib;
+			};
+			name = Release;
+		};
+		75182C621D8327F3007FE325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = TestLibTools;
+			};
+			name = Debug;
+		};
+		75182C631D8327F3007FE325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = TestLibTools;
+			};
+			name = Release;
 		};
 		751931D811F7BAFE0038715F /* Development */ = {
 			isa = XCBuildConfiguration;
@@ -699,7 +756,7 @@
 					"\"$(SRCROOT)/cctools/include\"/**",
 					"\"$(SRCROOT)/cctools/include/cbt\"",
 				);
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -712,7 +769,7 @@
 					"\"$(SRCROOT)/cctools/include\"/**",
 					"\"$(SRCROOT)/cctools/include/cbt\"",
 				);
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -753,6 +810,8 @@
 			buildConfigurations = (
 				634C98C608E80093002B8C46 /* Development */,
 				634C98C708E80093002B8C46 /* Deployment */,
+				75182C5E1D8327F3007FE325 /* Debug */,
+				75182C5F1D8327F3007FE325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -773,6 +832,8 @@
 			buildConfigurations = (
 				751931D811F7BAFE0038715F /* Development */,
 				751931D911F7BAFE0038715F /* Deployment */,
+				75182C601D8327F3007FE325 /* Debug */,
+				75182C611D8327F3007FE325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -782,6 +843,8 @@
 			buildConfigurations = (
 				759EFB671200B5EC009F6F92 /* Development */,
 				759EFB681200B5EC009F6F92 /* Deployment */,
+				75182C621D8327F3007FE325 /* Debug */,
+				75182C631D8327F3007FE325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
